@@ -6,6 +6,8 @@ MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en esc
 
 ![Vista móvil del MVP con un perfil de prueba](docs/brujula-movil.jpg)
 
+🎬 [Video de presentación (15 s, vertical)](docs/brujula-promo.mp4)
+
 ## Lo que funciona
 
 - Bienvenida de menos de un minuto la primera vez: tres pasos de un toque (sobre ti, área de interés, habilidades y tiempo) y un resumen con fortalezas, habilidades por reforzar y ritmo, que lleva a Explorar oportunidades. Se puede saltar con «Ahora no» o «Solo quiero explorar».
