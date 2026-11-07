@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import type { ReactNode } from 'react';
 import { ArrowLeft, ArrowRight, Check, Megaphone, ChartColumn, Laptop, Briefcase, Palette, HeartHandshake, Lock, Sparkles } from 'lucide-react';
-import type { Opportunity, Profile } from '@/lib/types';
-import { AREAS, DEFAULT_PROFILE, relevance, statusOf } from '@/lib/logic';
+import type { Profile } from '@/lib/types';
+import { AREAS, DEFAULT_PROFILE } from '@/lib/logic';
 import { CAREERS, TRANSVERSAL_AREAS, areasForCareer, skillsForCareer } from '@/lib/careers';
 
 // Primer recorrido: bienvenida + 3 pasos cortos + resumen.
@@ -17,9 +17,8 @@ const CYCLES = Array.from({ length: 10 }, (_, i) => i + 1);
 const TOTAL = 3;
 
 
-export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, onSkip, onFinish }: {
+export function Onboarding({ initialStep = 0, busy, art, onSave, onSkip, onFinish }: {
  initialStep?: number;
- opportunities: Opportunity[];
  busy: boolean;
  art: ReactNode;
  onSave: (p: Profile) => Promise<boolean>;
@@ -54,8 +53,6 @@ export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, 
  </div>;
 
  if (step === 4) {
-  const published = opportunities.filter(o => o.status !== 'draft' && statusOf(o) !== 'Vencida');
-  const picks = [...published].sort((a, b) => relevance(b, value) - relevance(a, value)).slice(0, 2);
   const toGrow = skillsForCareer(value.career).filter(s => !value.skills.includes(s)).slice(0, 2);
   const idx = AREAS.indexOf(value.target); const Icon = AREA_ICONS[idx] || Sparkles;
   return <div className="ob">
@@ -69,11 +66,10 @@ export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, 
      {toGrow.length ? <div className="ob-summary-row"><small>Podrías reforzar</small><div className="ob-tags">{toGrow.map(s => <span key={s} className="ob-tag">{s}</span>)}</div></div> : null}
      <div className="ob-summary-row"><small>Tu ritmo</small><span>{value.hours} horas por semana</span></div>
     </div>
-    {picks.length ? <><h2 className="ob-subtitle">Para empezar</h2><div className="ob-picks">{picks.map(o => <div className="ob-pick" key={o.id}><b>{o.title}</b><small>{o.organization} · {o.costLabel}</small></div>)}</div></> : null}
    </div>
    <div className="ob-footer">
-    <button className="button full" onClick={() => onFinish('route')}>Ver mi ruta <ArrowRight size={16} /></button>
-    <button className="ob-link" onClick={() => onFinish('explore')}>Explorar oportunidades</button>
+    <button className="button full" onClick={() => onFinish('explore')}>Explorar oportunidades <ArrowRight size={16} /></button>
+    <button className="ob-link" onClick={() => onFinish('route')}>Ver mi ruta</button>
    </div>
   </div>;
  }
