@@ -6,7 +6,7 @@ MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en esc
 
 ![Vista móvil del MVP con un perfil de prueba](docs/brujula-movil.jpg)
 
-🎬 [Video de presentación (15 s, vertical)](docs/brujula-promo.mp4)
+🎬 [Video de presentación (15 s, vertical)](docs/cercania-promo.mp4)
 
 ## Lo que funciona
 
