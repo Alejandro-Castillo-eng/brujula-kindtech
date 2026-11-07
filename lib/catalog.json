@@ -1158,5 +1158,71 @@
    "https://gdg.community.dev/gdg-ica/"
   ],
   "lastVerified": "2026-11-07"
+ },
+ {
+  "type": "curso",
+  "organization": "Databricks Academy",
+  "costLabel": "Gratuito · con insignia",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "language": "Inglés",
+  "lastVerified": "2026-11-07",
+  "statusNote": "Necesitas crear una cuenta gratuita en Databricks Academy. Las insignias se comparten en LinkedIn y pueden tener vencimiento.",
+  "id": "databricks-fundamentals",
+  "title": "Databricks Fundamentals",
+  "url": "https://customer-academy.databricks.com/learn",
+  "description": "Introducción gratuita a la plataforma de datos e IA de Databricks. Al aprobar la acreditación (quiz de 10 preguntas) recibes una insignia digital.",
+  "skills": [
+   "Análisis de datos",
+   "Ingeniería de datos",
+   "Nube",
+   "SQL"
+  ],
+  "categories": [
+   "Datos",
+   "Tecnología",
+   "Nube",
+   "Inteligencia artificial"
+  ],
+  "durationLabel": "Curso a tu ritmo + quiz de 30 min",
+  "evidence": "Databricks indica que todos los cursos de Databricks Academy son gratuitos y a tu ritmo, y que Fundamentals otorga una insignia para LinkedIn. La acreditación es un quiz de 10 preguntas en 30 minutos; la insignia llega en 48 horas.",
+  "sourceUrls": [
+   "https://answers.databricks.com/certified-data-ai-start",
+   "https://www.databricks.com/training/catalog/databricks-fundamentals-accreditation-2308"
+  ]
+ },
+ {
+  "type": "curso",
+  "organization": "Databricks Academy",
+  "costLabel": "Gratuito · con insignia",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "language": "Inglés",
+  "lastVerified": "2026-11-07",
+  "statusNote": "Necesitas crear una cuenta gratuita en Databricks Academy. Las insignias se comparten en LinkedIn y pueden tener vencimiento.",
+  "id": "databricks-genai-fundamentals",
+  "title": "Generative AI Fundamentals",
+  "url": "https://customer-academy.databricks.com/learn",
+  "description": "Ruta gratuita sobre los fundamentos de la IA generativa en Databricks. Al aprobar la evaluación con 80 % recibes una insignia.",
+  "skills": [
+   "IA generativa",
+   "Inteligencia artificial",
+   "Análisis de datos"
+  ],
+  "categories": [
+   "Inteligencia artificial",
+   "Tecnología",
+   "Datos"
+  ],
+  "durationLabel": "Ruta a tu ritmo + evaluación de 25 min",
+  "evidence": "El catálogo oficial indica que la acreditación forma parte del Generative AI Fundamentals Learning Plan, dura unos 25 minutos y otorga una insignia con 80 % de aciertos. Databricks indica que los cursos de Academy son gratuitos.",
+  "sourceUrls": [
+   "https://databricks.com/training/catalog/generative-ai-fundamentals-accreditation-1811",
+   "https://answers.databricks.com/certified-data-ai-start"
+  ]
  }
 ]
