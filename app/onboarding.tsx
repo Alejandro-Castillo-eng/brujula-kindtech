@@ -47,7 +47,7 @@ export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, 
    <span className="ob-pill">TU FUTURO, A TU RITMO</span>
    <h1>Tu talento tiene un camino.</h1>
    <p className="ob-lead">Responde 3 preguntas rápidas y te mostramos por dónde empezar.</p>
-   <ul className="ob-facts"><li><Sparkles size={14} /> Menos de 1 minuto</li><li><Lock size={14} /> Sin cuenta: tus datos se quedan en este navegador</li></ul>
+   <ul className="ob-facts"><li><Sparkles size={16} /> Menos de 1 minuto</li><li><Lock size={16} /> Sin cuenta: tus datos se quedan en este navegador</li></ul>
   </div>
   <div className="ob-footer">
    <button className="button full" onClick={() => setStep(1)}>Empezar <ArrowRight size={16} /></button>
@@ -62,11 +62,11 @@ export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, 
   const idx = AREAS.indexOf(value.target); const Icon = AREA_ICONS[idx] || Sparkles;
   return <div className="ob">
    <div className="ob-scroll">
-    <span className="ob-done"><Check size={22} /></span>
+    <span className="ob-done"><Check size={24} /></span>
     <h1>Listo, {value.name.split(' ')[0]}.</h1>
     <p className="ob-lead">Este es tu punto de partida. Puedes cambiarlo cuando quieras.</p>
     <div className="ob-summary">
-     <div className="ob-summary-head"><span className="ob-area-icon"><Icon size={18} /></span><div><small>Quieres crecer en</small><b>{value.target}</b></div></div>
+     <div className="ob-summary-head"><span className="ob-area-icon"><Icon size={21} /></span><div><small>Quieres crecer en</small><b>{value.target}</b></div></div>
      <div className="ob-summary-row"><small>Tus fortalezas</small><div className="ob-tags">{value.skills.length ? value.skills.slice(0, 6).map(s => <span key={s} className="ob-tag on">{s}</span>) : <span className="ob-muted">Las descubriremos en el camino.</span>}</div></div>
      {toGrow.length ? <div className="ob-summary-row"><small>Podrías reforzar</small><div className="ob-tags">{toGrow.map(s => <span key={s} className="ob-tag">{s}</span>)}</div></div> : null}
      <div className="ob-summary-row"><small>Tu ritmo</small><span>{value.hours} horas por semana</span></div>
@@ -101,14 +101,14 @@ export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, 
    <span className="ob-step">PASO 2 DE 3</span>
    <h1>¿Hacia dónde quieres crecer?</h1>
    <p className="ob-lead">Elige una. Podrás explorar todas las áreas igual.</p>
-   <div className="ob-areas">{AREAS.map((a, i) => { const Icon = AREA_ICONS[i]; return <button type="button" key={a} className={value.target === a ? 'on' : ''} aria-pressed={value.target === a} aria-label={a} onClick={() => pickArea(a)}><Icon size={20} /><span>{AREA_SHORT[i]}</span></button>; })}</div>
+   <div className="ob-areas">{AREAS.map((a, i) => { const Icon = AREA_ICONS[i]; return <button type="button" key={a} className={value.target === a ? 'on' : ''} aria-pressed={value.target === a} aria-label={a} onClick={() => pickArea(a)}><Icon size={23} /><span>{AREA_SHORT[i]}</span></button>; })}</div>
   </div> : null}
 
   {step === 3 ? <div className="ob-scroll">
    <span className="ob-step">PASO 3 DE 3</span>
    <h1>¿Qué ya sabes hacer?</h1>
    <p className="ob-lead">Toca las que apliquen. Si aún no sabes, puedes seguir.</p>
-   <div className="ob-tags pick">{[...suggestedSkills(value.target), ...SKILLS.filter(s => !suggestedSkills(value.target).includes(s))].map(s => <button type="button" key={s} className={'ob-tag' + (value.skills.includes(s) ? ' on' : '')} aria-pressed={value.skills.includes(s)} onClick={() => toggleSkill(s)}>{value.skills.includes(s) ? <Check size={12} /> : null}{s}</button>)}</div>
+   <div className="ob-tags pick">{[...suggestedSkills(value.target), ...SKILLS.filter(s => !suggestedSkills(value.target).includes(s))].map(s => <button type="button" key={s} className={'ob-tag' + (value.skills.includes(s) ? ' on' : '')} aria-pressed={value.skills.includes(s)} onClick={() => toggleSkill(s)}>{value.skills.includes(s) ? <Check size={14} /> : null}{s}</button>)}</div>
    <span className="field-title">¿Cuánto tiempo tienes por semana?</span>
    <div className="ob-hours">{HOURS.map(h => <button type="button" key={h} className={value.hours === h ? 'on' : ''} aria-pressed={value.hours === h} onClick={() => change('hours', h)}>{h} h</button>)}</div>
   </div> : null}
