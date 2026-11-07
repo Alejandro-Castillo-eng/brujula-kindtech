@@ -2,8 +2,8 @@ import { useState } from 'react';
 import type { ReactNode } from 'react';
 import { ArrowLeft, ArrowRight, Check, Megaphone, ChartColumn, Laptop, Briefcase, Palette, HeartHandshake, Lock, Sparkles } from 'lucide-react';
 import type { Opportunity, Profile } from '@/lib/types';
-import { AREAS, SKILLS, DEFAULT_PROFILE, relevance, statusOf } from '@/lib/logic';
-import { CAREERS, TRANSVERSAL_AREAS, areasForCareer } from '@/lib/careers';
+import { AREAS, DEFAULT_PROFILE, relevance, statusOf } from '@/lib/logic';
+import { CAREERS, TRANSVERSAL_AREAS, areasForCareer, skillsForCareer } from '@/lib/careers';
 
 // Primer recorrido: bienvenida + 3 pasos cortos + resumen.
 // Cada paso es una sola pregunta principal y casi todo se responde con toques.
@@ -12,19 +12,10 @@ const AREA_ICONS = [Megaphone, ChartColumn, Laptop, Briefcase, Palette, HeartHan
 const AREA_SHORT = ['Marketing', 'Datos', 'Tecnología', 'Negocios', 'Diseño', 'Impacto social'];
 // Nombres de las áreas cuando se muestran como habilidades para cualquier carrera.
 const TRANSVERSAL_LABEL: Record<string, string> = { [AREAS[1]]: 'Excel y datos', [AREAS[0]]: 'Comunicación', [AREAS[3]]: 'Gestión y liderazgo', [AREAS[5]]: 'Voluntariado' };
-const AREA_SKILLS: Record<string, string[]> = {
- [AREAS[0]]: ['Marketing digital', 'Comunicación', 'Diseño'],
- [AREAS[1]]: ['Excel', 'Análisis de datos', 'Power BI', 'Python'],
- [AREAS[2]]: ['Programación', 'Python', 'Inglés'],
- [AREAS[3]]: ['Gestión de proyectos', 'Liderazgo', 'Excel'],
- [AREAS[4]]: ['Diseño', 'Comunicación', 'Marketing digital'],
- [AREAS[5]]: ['Trabajo en equipo', 'Liderazgo', 'Comunicación'],
-};
 const HOURS = [2, 4, 6, 10];
 const CYCLES = Array.from({ length: 10 }, (_, i) => i + 1);
 const TOTAL = 3;
 
-export function suggestedSkills(target: string) { return AREA_SKILLS[target] || []; }
 
 export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, onSkip, onFinish }: {
  initialStep?: number;
@@ -65,7 +56,7 @@ export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, 
  if (step === 4) {
   const published = opportunities.filter(o => o.status !== 'draft' && statusOf(o) !== 'Vencida');
   const picks = [...published].sort((a, b) => relevance(b, value) - relevance(a, value)).slice(0, 2);
-  const toGrow = suggestedSkills(value.target).filter(s => !value.skills.includes(s)).slice(0, 2);
+  const toGrow = skillsForCareer(value.career).filter(s => !value.skills.includes(s)).slice(0, 2);
   const idx = AREAS.indexOf(value.target); const Icon = AREA_ICONS[idx] || Sparkles;
   return <div className="ob">
    <div className="ob-scroll">
@@ -115,8 +106,8 @@ export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, 
   {step === 3 ? <div className="ob-scroll">
    <span className="ob-step">PASO 3 DE 3</span>
    <h1>¿Qué ya sabes hacer?</h1>
-   <p className="ob-lead">Toca las que apliquen. Si aún no sabes, puedes seguir.</p>
-   <div className="ob-tags pick">{[...suggestedSkills(value.target), ...SKILLS.filter(s => !suggestedSkills(value.target).includes(s))].map(s => <button type="button" key={s} className={'ob-tag' + (value.skills.includes(s) ? ' on' : '')} aria-pressed={value.skills.includes(s)} onClick={() => toggleSkill(s)}>{value.skills.includes(s) ? <Check size={14} /> : null}{s}</button>)}</div>
+   <p className="ob-lead">{careerAreas ? `Lo más usado en ${value.career}.` : 'Útil en cualquier carrera.'} Toca lo que ya manejas o sigue sin marcar.</p>
+   <div className="ob-tags pick">{skillsForCareer(value.career).map(s => <button type="button" key={s} className={'ob-tag' + (value.skills.includes(s) ? ' on' : '')} aria-pressed={value.skills.includes(s)} onClick={() => toggleSkill(s)}>{value.skills.includes(s) ? <Check size={14} /> : null}{s}</button>)}</div>
    <span className="field-title">¿Cuánto tiempo tienes por semana?</span>
    <div className="ob-hours">{HOURS.map(h => <button type="button" key={h} className={value.hours === h ? 'on' : ''} aria-pressed={value.hours === h} onClick={() => change('hours', h)}>{h} h</button>)}</div>
   </div> : null}
