@@ -76,6 +76,8 @@ export function buildRoute(profile:Profile|null,items:Opportunity[]):Task[] {
   {id:'review-'+normalize(profile.target),title:'Reconoce tu avance y ajusta tu perfil',description:'Añade lo aprendido a tu perfil. Guarda una evidencia y elige tu siguiente paso. Cada avance cuenta.',kind:'Progreso',week:4},
  ];
 }
+/** Solo perfiles personales de LinkedIn: https://www.linkedin.com/in/usuario */
+export function isLinkedInProfile(value:string) { return /^https:\/\/(www\.|[a-z]{2}\.)?linkedin\.com\/in\/[A-Za-z0-9_%-]{3,100}\/?$/.test(value.trim()); }
 export function safeUrl(value:string) {
  try {const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password&&!/^(localhost|127\.|10\.|192\.168\.|169\.254\.|\[|0\.|172\.(1[6-9]|2\d|3[01])\.)/i.test(u.hostname)&&u.hostname.includes('.');}catch{return false;}
 }

@@ -2,7 +2,7 @@
 // todos los datos del usuario viven en el navegador (localStorage) y nunca se
 // envían a ningún servidor. Así la app puede publicarse como sitio estático.
 import { z } from 'zod';
-import { safeUrl, AREAS, buildRoute } from './logic.ts';
+import { safeUrl, AREAS, buildRoute, isLinkedInProfile } from './logic.ts';
 import type { Bootstrap, Mentor, MentorRequest, Opportunity, Profile } from './types';
 
 export const STORAGE_KEY = 'brujula:v1';
@@ -12,7 +12,7 @@ export type KeyValueStorage = { getItem(key: string): string | null; setItem(key
 
 type CustomOpportunity = { id: string; data: Opportunity; status: string; createdAt: string };
 type SavedEntry = { opportunity_id: string; stage: string; created_at: string };
-type MentorData = { role: string; bio: string; topics: string[]; name: string; organization: string; area: string; career?: string; cycle?: number };
+type MentorData = { role: string; bio: string; topics: string[]; name: string; organization: string; area: string; career?: string; cycle?: number; linkedin?: string };
 type StoredRequest = Omit<MentorRequest, 'incoming'>;
 type State = {
  profile: Profile | null;
@@ -29,7 +29,7 @@ export class StoreError extends Error {}
 const text = z.string().trim().max(500);
 const profileSchema = z.object({ name: z.string().trim().min(2).max(60), career: z.string().trim().min(2).max(100), university: z.string().trim().max(100), cycle: z.number().int().min(1).max(14), target: z.string().refine(x => AREAS.includes(x)), skills: z.array(z.string().max(60)).max(20), hours: z.number().int().min(1).max(40), bio: text });
 const opportunitySchema = z.object({ title: z.string().trim().min(5).max(140), organization: z.string().trim().min(2).max(100), type: z.enum(['curso', 'voluntariado', 'programa', 'evento']), url: z.string().max(2000).refine(safeUrl), description: z.string().trim().min(20).max(1500), skills: z.array(z.string().trim().min(1).max(60)).max(15), categories: z.array(z.string().max(80)).max(10), costLabel: z.string().trim().min(2).max(100), format: z.enum(['Virtual', 'Presencial', 'Híbrido']), location: z.string().trim().min(2).max(100), deadline: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(v => !isNaN(Date.parse(v)) && new Date(v).toISOString().slice(0, 10) === v).nullable(), availability: z.enum(['permanente', 'verificar convocatoria']), lastVerified: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), status: z.enum(['draft', 'published']) });
-const mentorSchema = z.object({ role: z.string().trim().min(3).max(80), bio: z.string().trim().min(20).max(500), topics: z.array(z.string().max(60)).min(1).max(6) });
+const mentorSchema = z.object({ role: z.string().trim().min(3).max(80), bio: z.string().trim().min(20).max(500), topics: z.array(z.string().max(60)).min(1).max(6), linkedin: z.string().trim().max(200).refine(v => v === '' || isLinkedInProfile(v), 'Usa el enlace de tu perfil: https://www.linkedin.com/in/tu-usuario').optional() });
 const id = z.string().max(200);
 
 const empty = (): State => ({ profile: null, opportunities: [], saved: [], progress: {}, mentor: null, requests: [], feedback: [] });
