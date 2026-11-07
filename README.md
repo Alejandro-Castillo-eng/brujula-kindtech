@@ -2,6 +2,12 @@
 
 MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en escritorio presenta un marco de teléfono. Nombre provisional. No requiere instalar una aplicación.
 
+[Abrir el MVP publicado](https://brujula-kindtech-2026.josealejandroc448327.chatgpt.site/) · [Repositorio](https://github.com/Alejandro-Castillo-eng/brujula-kindtech)
+
+El sitio publicado es privado y requiere iniciar sesión con la cuenta propietaria de ChatGPT. El repositorio conserva el código, las migraciones y las instrucciones para ejecutarlo localmente.
+
+![Vista móvil del MVP con un perfil de prueba](docs/brujula-movil.jpg)
+
 ## Lo que funciona
 
 - Inicio, perfil de tres pasos, objetivo y disponibilidad semanal.
