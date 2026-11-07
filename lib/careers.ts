@@ -20,36 +20,45 @@ const IA_TRABAJO = 'Usar IA en el trabajo (ChatGPT, Claude)';
 const IA_PROGRAMAR = 'Programar con IA (Claude Code, Codex)';
 const IA_CONTENIDO = 'Crear contenido con IA';
 
-export type Career = { name: string; areas: string[]; skills: string[]; keywords: string[] };
+export type Career = { name: string; areas: string[]; skills: string[]; keywords: string[]; roles: string[] };
 
 export const CAREERS: Career[] = [
  { name: 'Administración', areas: [NEGOCIOS, MARKETING, DATOS, IMPACTO],
    skills: ['Excel', 'Power BI', 'Gestión de proyectos', 'Finanzas básicas', 'Contabilidad básica', IA_TRABAJO, 'ERP (SAP)', 'Marketing digital', 'Inglés'],
-   keywords: ['gestion', 'liderazgo', 'negocios', 'excel', 'proyectos', 'agile', 'empleabilidad'] },
+   keywords: ['gestion', 'liderazgo', 'negocios', 'excel', 'proyectos', 'agile', 'empleabilidad'],
+   roles: ['Analista de negocios', 'Gestión de proyectos', 'Analista financiero', 'Recursos humanos', 'Emprendimiento'] },
  { name: 'Contabilidad', areas: [DATOS, NEGOCIOS],
    skills: ['Excel avanzado', 'Software contable', 'Tributación', 'Análisis financiero', 'Power BI', 'SQL', IA_TRABAJO, 'Inglés'],
-   keywords: ['excel', 'finanzas', 'datos', 'power bi', 'sql'] },
+   keywords: ['excel', 'finanzas', 'datos', 'power bi', 'sql'],
+   roles: ['Auditoría', 'Analista contable', 'Tributación', 'Analista financiero', 'Control de gestión'] },
  { name: 'Economía', areas: [DATOS, NEGOCIOS],
    skills: ['Excel avanzado', 'Python para datos', 'R', 'Stata', 'Econometría', 'Power BI', IA_TRABAJO, 'Redacción de informes', 'Inglés'],
-   keywords: ['datos', 'python', 'excel', 'analisis', 'power bi', 'sql'] },
+   keywords: ['datos', 'python', 'excel', 'analisis', 'power bi', 'sql'],
+   roles: ['Analista económico', 'Analista de datos', 'Riesgos financieros', 'Políticas públicas', 'Investigación económica'] },
  { name: 'Ingeniería Industrial', areas: [NEGOCIOS, DATOS, TECNOLOGIA],
    skills: ['Excel avanzado', 'Power BI', 'Gestión de proyectos', 'Lean y mejora continua', 'Gestión de procesos', 'Logística', 'SQL', 'Python para datos', IA_TRABAJO, 'Inglés'],
-   keywords: ['gestion', 'proyectos', 'datos', 'excel', 'power bi', 'agile', 'sql'] },
+   keywords: ['gestion', 'proyectos', 'datos', 'excel', 'power bi', 'agile', 'sql'],
+   roles: ['Analista de operaciones', 'Cadena de suministro', 'Mejora continua', 'Gestión de proyectos', 'Analista de procesos'] },
  { name: 'Ingeniería de Sistemas', areas: [TECNOLOGIA, DATOS],
    skills: ['Programación', 'Python', 'Git y GitHub', IA_PROGRAMAR, 'SQL', 'Java', 'JavaScript', 'Redes', 'Ciberseguridad', 'Nube (AWS, Azure)', 'Inglés técnico'],
-   keywords: ['python', 'programacion', 'codigo', 'software', 'git', 'ciberseguridad', 'redes', 'inteligencia artificial', 'cuantica', 'sql', 'hackathon', 'nube', 'cloud'] },
+   keywords: ['python', 'programacion', 'codigo', 'software', 'git', 'ciberseguridad', 'redes', 'inteligencia artificial', 'cuantica', 'sql', 'hackathon', 'nube', 'cloud'],
+   roles: ['Desarrollador de software', 'Analista de datos', 'Ciberseguridad', 'Ingeniero cloud', 'Ingeniero de IA'] },
  { name: 'Ingeniería de Software', areas: [TECNOLOGIA, DATOS],
    skills: ['Programación', 'JavaScript', 'Python', 'Git y GitHub', IA_PROGRAMAR, 'Desarrollo web', 'Bases de datos (SQL)', 'Pruebas de software', 'Metodologías ágiles', 'Nube (AWS, Azure)', 'Inglés técnico'],
-   keywords: ['python', 'programacion', 'codigo', 'software', 'git', 'inteligencia artificial', 'sql', 'agile', 'hackathon', 'nube', 'cloud'] },
+   keywords: ['python', 'programacion', 'codigo', 'software', 'git', 'inteligencia artificial', 'sql', 'agile', 'hackathon', 'nube', 'cloud'],
+   roles: ['Desarrollador full stack', 'Desarrollador backend', 'QA y pruebas de software', 'DevOps', 'Ingeniero de IA'] },
  { name: 'Marketing', areas: [MARKETING, DISENO, DATOS],
    skills: ['Marketing digital', 'Redes sociales', 'Google Analytics', 'SEO y SEM', 'Publicidad en Meta y Google', 'Creación de contenido', 'Canva', IA_CONTENIDO, 'Excel', 'Inglés'],
-   keywords: ['marketing', 'redes sociales', 'contenido', 'inbound', 'ventas', 'comunicacion'] },
+   keywords: ['marketing', 'redes sociales', 'contenido', 'inbound', 'ventas', 'comunicacion'],
+   roles: ['Marketing digital', 'Brand manager', 'Growth marketing', 'Analista de marketing', 'Social media'] },
  { name: 'Ciencias de la Comunicación', areas: [MARKETING, DISENO, IMPACTO],
    skills: ['Redacción periodística', 'Creación de contenido', 'Redes sociales', 'Edición de video', 'Fotografía', 'Producción de podcast', 'Google Analytics', 'Canva', IA_CONTENIDO, 'Inglés'],
-   keywords: ['comunicacion', 'contenido', 'redes sociales', 'marketing', 'voluntariado'] },
+   keywords: ['comunicacion', 'contenido', 'redes sociales', 'marketing', 'voluntariado'],
+   roles: ['Comunicación corporativa', 'Creación de contenido', 'Periodismo', 'Relaciones públicas', 'Producción audiovisual'] },
  { name: 'Diseño Gráfico', areas: [DISENO, MARKETING],
    skills: ['Figma', 'Illustrator', 'Photoshop', 'Diseño UX/UI', 'Branding', 'Tipografía', 'Motion graphics', 'Portafolio', 'Diseño con IA', 'Inglés'],
-   keywords: ['diseno', 'visual', 'contenido', 'creatividad', 'redes sociales'] },
+   keywords: ['diseno', 'visual', 'contenido', 'creatividad', 'redes sociales'],
+   roles: ['Diseño UX/UI', 'Diseño de marca', 'Diseño de producto', 'Motion design', 'Dirección de arte'] },
 ];
 
 // Sugerencias para el campo «¿En qué universidad estudias?» (se puede escribir cualquier otra).
@@ -83,3 +92,20 @@ export function skillsForCareer(career: string): string[] { return findCareer(ca
 
 /** Palabras que hacen subir una oportunidad para esa carrera. */
 export function keywordsForCareer(career: string): string[] { return findCareer(career)?.keywords || []; }
+
+// «Referentes para guiarte» (Mi perfil): búsquedas de LinkedIn por trayectoria típica de la carrera.
+// No se nombran personas: cada enlace abre perfiles públicos que el estudiante explora por su cuenta.
+const GENERIC_ROLES = ['Practicante', 'Analista', 'Coordinación de proyectos', 'Consultoría', 'Investigación'];
+const linkedinPeople = (keywords: string) => `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(keywords)}`;
+
+export function referentSearches(profile: { career: string; university?: string }): { title: string; sub: string; url: string }[] {
+ const career = findCareer(profile.career);
+ const careerName = career?.name || profile.career.trim();
+ const list = (career?.roles || GENERIC_ROLES).map(role => ({ title: role, sub: `Trayectorias en Perú · ${careerName}`, url: linkedinPeople(`${role} ${careerName} Perú`) }));
+ const uni = (profile.university || '').trim();
+ if (uni) {
+  const short = uni.match(/\(([^)]+)\)/)?.[1] || uni;
+  list.unshift({ title: `Egresados de ${short}`, sub: careerName, url: linkedinPeople(`${careerName} ${short}`) });
+ }
+ return list;
+}
