@@ -223,3 +223,9 @@ span.ob-tag{padding:7px 12px;font-size:12px}
 .chat-bubble small{display:block;font-size:11px;color:var(--muted);margin-top:4px;font-style:italic}
 .chat-empty{font-size:13px;color:var(--muted);text-align:center;margin:6px 0}
 .brand-ia{background:linear-gradient(90deg,#e96a42,#d9467a);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* Panel lateral (solo escritorio): video de presentación y descarga */
+.promo-side{display:flex;flex-direction:column;align-items:center;gap:14px;width:250px;text-align:center}
+.promo-side video{width:250px;aspect-ratio:9/16;border-radius:22px;object-fit:cover;box-shadow:0 24px 60px #4a2a3a33;background:#e96a42}
+.promo-side b{font-family:'Manrope',sans-serif;font-size:17px;color:var(--ink)}
+.promo-side .button{margin-top:0}
+@media(max-width:1000px){.promo-side{display:none}}
