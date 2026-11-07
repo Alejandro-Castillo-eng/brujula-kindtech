@@ -77,3 +77,6 @@ span.ob-tag{padding:7px 12px;font-size:12px}
 .ob-pick small{font-size:12px;color:var(--muted)}
 @keyframes pop{0%{transform:scale(.6);opacity:0}100%{transform:scale(1);opacity:1}}
 @media(max-width:360px){.ob-hero .compass-art{display:block}.ob-scroll{padding-left:18px;padding-right:18px}}
+.ob-careers{display:flex;flex-wrap:wrap;gap:8px}
+.ob-heads-up{background:#f4efe6;border-radius:14px;padding:14px 16px;font-size:14px;line-height:1.55;color:#5f5547;margin:4px 0 2px}
+.ob-heads-up b{display:block;color:var(--ink);margin-bottom:4px}

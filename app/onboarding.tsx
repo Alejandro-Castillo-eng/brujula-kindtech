@@ -3,12 +3,15 @@ import type { ReactNode } from 'react';
 import { ArrowLeft, ArrowRight, Check, Megaphone, ChartColumn, Laptop, Briefcase, Palette, HeartHandshake, Lock, Sparkles } from 'lucide-react';
 import type { Opportunity, Profile } from '@/lib/types';
 import { AREAS, SKILLS, DEFAULT_PROFILE, relevance, statusOf } from '@/lib/logic';
+import { CAREERS, TRANSVERSAL_AREAS, areasForCareer } from '@/lib/careers';
 
 // Primer recorrido: bienvenida + 3 pasos cortos + resumen.
 // Cada paso es una sola pregunta principal y casi todo se responde con toques.
 
 const AREA_ICONS = [Megaphone, ChartColumn, Laptop, Briefcase, Palette, HeartHandshake];
 const AREA_SHORT = ['Marketing', 'Datos', 'Tecnología', 'Negocios', 'Diseño', 'Impacto social'];
+// Nombres de las áreas cuando se muestran como habilidades para cualquier carrera.
+const TRANSVERSAL_LABEL: Record<string, string> = { [AREAS[1]]: 'Excel y datos', [AREAS[0]]: 'Comunicación', [AREAS[3]]: 'Gestión y liderazgo', [AREAS[5]]: 'Voluntariado' };
 const AREA_SKILLS: Record<string, string[]> = {
  [AREAS[0]]: ['Marketing digital', 'Comunicación', 'Diseño'],
  [AREAS[1]]: ['Excel', 'Análisis de datos', 'Power BI', 'Python'],
@@ -33,7 +36,11 @@ export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, 
  onFinish: (to: 'route' | 'explore') => void;
 }) {
  const [step, setStep] = useState(initialStep);
- const [value, setValue] = useState<Profile>({ ...DEFAULT_PROFILE, target: '' });
+ const [value, setValue] = useState<Profile>({ ...DEFAULT_PROFILE, career: '', target: '' });
+ const [otherCareer, setOtherCareer] = useState(false);
+ const careerAreas = areasForCareer(value.career);
+ const areaOptions = careerAreas || TRANSVERSAL_AREAS;
+ const pickCareer = (name: string) => { setOtherCareer(false); setValue(p => ({ ...p, career: name, target: '' })); };
  const change = <K extends keyof Profile>(key: K, v: Profile[K]) => setValue(p => ({ ...p, [key]: v }));
  const toggleSkill = (s: string) => change('skills', value.skills.includes(s) ? value.skills.filter(x => x !== s) : [...value.skills, s]);
 
@@ -91,7 +98,9 @@ export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, 
    <span className="ob-step">PASO 1 DE 3</span>
    <h1>Cuéntanos de ti</h1>
    <label className="field">¿Cómo te llamas?<input autoFocus autoComplete="given-name" required minLength={2} maxLength={60} value={value.name} onChange={e => change('name', e.target.value)} placeholder="Tu nombre" /></label>
-   <label className="field">¿Qué estudias?<input required minLength={2} maxLength={100} value={value.career} onChange={e => change('career', e.target.value)} placeholder="Ej. Administración" /></label>
+   <span className="field-title">¿Qué estudias?</span>
+   <div className="ob-careers">{CAREERS.map(c => <button type="button" key={c.name} className={'ob-tag' + (!otherCareer && value.career === c.name ? ' on' : '')} aria-pressed={!otherCareer && value.career === c.name} onClick={() => pickCareer(c.name)}>{c.name}</button>)}<button type="button" className={'ob-tag' + (otherCareer ? ' on' : '')} aria-pressed={otherCareer} onClick={() => { setOtherCareer(true); setValue(p => ({ ...p, career: '', target: '' })); }}>Otra carrera</button></div>
+   {otherCareer ? <label className="field">Escribe tu carrera<input autoFocus required minLength={2} maxLength={100} value={value.career} onChange={e => setValue(p => ({ ...p, career: e.target.value, target: '' }))} placeholder="Ej. Psicología" /></label> : null}
    <span className="field-title">¿En qué ciclo estás?</span>
    <div className="ob-cycles">{CYCLES.map(c => <button type="button" key={c} className={value.cycle === c ? 'on' : ''} aria-pressed={value.cycle === c} onClick={() => change('cycle', c)}>{c}</button>)}</div>
   </form> : null}
@@ -99,8 +108,8 @@ export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, 
   {step === 2 ? <div className="ob-scroll">
    <span className="ob-step">PASO 2 DE 3</span>
    <h1>¿Hacia dónde quieres crecer?</h1>
-   <p className="ob-lead">Elige una. Podrás explorar todas las áreas igual.</p>
-   <div className="ob-areas">{AREAS.map((a, i) => { const Icon = AREA_ICONS[i]; return <button type="button" key={a} className={value.target === a ? 'on' : ''} aria-pressed={value.target === a} aria-label={a} onClick={() => pickArea(a)}><Icon size={23} /><span>{AREA_SHORT[i]}</span></button>; })}</div>
+   {careerAreas ? <p className="ob-lead">Áreas que se relacionan con {value.career}.</p> : <div className="ob-heads-up"><b>Aún no tenemos una ruta para {value.career}.</b> Empezamos con pocas carreras. Mientras tanto, elige algo que sirve en cualquier carrera.</div>}
+   <div className="ob-areas">{areaOptions.map(a => { const i = AREAS.indexOf(a); const Icon = AREA_ICONS[i]; const label = careerAreas ? AREA_SHORT[i] : TRANSVERSAL_LABEL[a]; return <button type="button" key={a} className={value.target === a ? 'on' : ''} aria-pressed={value.target === a} aria-label={label} onClick={() => pickArea(a)}><Icon size={23} /><span>{label}</span></button>; })}</div>
   </div> : null}
 
   {step === 3 ? <div className="ob-scroll">

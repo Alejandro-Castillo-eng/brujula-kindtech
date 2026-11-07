@@ -9,6 +9,7 @@ MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en esc
 ## Lo que funciona
 
 - Bienvenida de menos de un minuto la primera vez: tres pasos de un toque (sobre ti, área de interés, habilidades y tiempo) y un resumen con fortalezas, habilidades por reforzar y dos oportunidades para empezar. Se puede saltar con «Ahora no» o «Solo quiero explorar».
+- Carreras iniciales: la carrera se elige de una lista corta (`lib/careers.ts`) y el paso de áreas muestra solo las relacionadas con ella. Si la carrera aún no está cubierta, se dice con claridad y se ofrecen áreas que sirven en cualquier carrera.
 - Inicio, edición del perfil, objetivo y disponibilidad semanal.
 - Catálogo inicial de 14 oportunidades recopiladas de fuentes originales, con modalidad, costo, requisitos, enlace y fecha de revisión.
 - Búsqueda por palabras, tipo, gratuidad y modalidad. Reconoce expresiones sencillas como «cursos gratis virtuales de marketing» mediante reglas, sin IA.
@@ -33,10 +34,11 @@ Sitio estático: React + TypeScript compilado con Vite y publicado en GitHub Pag
 | `app/style.css` | Diseño |
 | `lib/local-store.ts` | Almacenamiento de la sesión, validación (Zod) y reglas de cada acción |
 | `lib/logic.ts` | Filtros, vigencia, relevancia y rutas |
+| `lib/careers.ts` | Carreras cubiertas y las áreas de cada una |
 | `lib/catalog.json` | Catálogo inicial con su evidencia y fuentes |
 | `.github/workflows/pages.yml` | Comprueba, compila y publica en la rama `gh-pages` |
 
-Para cambiar el catálogo inicial basta con editar `lib/catalog.json` y subir el cambio a `main`: GitHub Pages se actualiza solo en uno o dos minutos.
+Para añadir una carrera, agrégala en `lib/careers.ts` con sus áreas, después de comprobar que el catálogo tiene oportunidades para ellas. Para cambiar el catálogo inicial basta con editar `lib/catalog.json` y subir el cambio a `main`: GitHub Pages se actualiza solo en uno o dos minutos.
 
 ## Desarrollo local
 
