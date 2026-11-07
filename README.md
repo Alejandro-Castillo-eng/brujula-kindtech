@@ -35,6 +35,7 @@ Sitio estático: React + TypeScript compilado con Vite y publicado en GitHub Pag
 | `app/style.css` | Diseño |
 | `lib/local-store.ts` | Almacenamiento de la sesión, validación (Zod) y reglas de cada acción |
 | `lib/logic.ts` | Filtros, vigencia, relevancia y rutas |
+| `public/logos/` | Logos de las organizaciones, uno por dominio (`<dominio>.png`); si falta, la tarjeta muestra las iniciales |
 | `lib/careers.ts` | Carreras cubiertas: áreas, conocimientos técnicos y palabras clave de cada una |
 | `lib/catalog.json` | Catálogo inicial con su evidencia y fuentes |
 | `.github/workflows/pages.yml` | Comprueba, compila y publica en la rama `gh-pages` |
