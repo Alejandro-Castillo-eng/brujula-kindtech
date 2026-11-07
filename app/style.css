@@ -97,3 +97,4 @@ span.ob-tag{padding:7px 12px;font-size:12px}
 @keyframes brand-spin{0%{transform:rotate(-372deg)}70%{transform:rotate(4deg)}100%{transform:rotate(-12deg)}}
 @keyframes brand-wiggle{0%,100%{transform:rotate(-12deg)}30%{transform:rotate(14deg)}60%{transform:rotate(-24deg)}}
 @media (prefers-reduced-motion:reduce){.needles,.orbit.two,.art-star,.brand-mark,.brand:hover .brand-mark{animation:none}}
+.mentor-bottom{justify-content:flex-end}

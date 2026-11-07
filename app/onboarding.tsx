@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 import { ArrowLeft, ArrowRight, Check, Megaphone, ChartColumn, Laptop, Briefcase, Palette, HeartHandshake, Lock, Sparkles } from 'lucide-react';
 import type { Profile } from '@/lib/types';
 import { AREAS, DEFAULT_PROFILE } from '@/lib/logic';
-import { CAREERS, TRANSVERSAL_AREAS, areasForCareer, skillsForCareer } from '@/lib/careers';
+import { CAREERS, TRANSVERSAL_AREAS, UNIVERSITIES, areasForCareer, skillsForCareer } from '@/lib/careers';
 
 // Primer recorrido: bienvenida + 3 pasos cortos + resumen.
 // Cada paso es una sola pregunta principal y casi todo se responde con toques.
@@ -36,7 +36,7 @@ export function Onboarding({ initialStep = 0, busy, art, onSave, onSkip, onFinis
 
  const aboutReady = value.name.trim().length >= 2 && value.career.trim().length >= 2;
  const pickArea = (a: string) => { change('target', a); window.setTimeout(() => setStep(3), 220); };
- async function finish() { if (await onSave({ ...value, name: value.name.trim(), career: value.career.trim() })) setStep(4); }
+ async function finish() { if (await onSave({ ...value, name: value.name.trim(), career: value.career.trim(), university: value.university.trim() })) setStep(4); }
 
  if (step === 0) return <div className="ob ob-welcome">
   <div className="ob-scroll">
@@ -85,6 +85,7 @@ export function Onboarding({ initialStep = 0, busy, art, onSave, onSkip, onFinis
    <span className="ob-step">PASO 1 DE 3</span>
    <h1>Cuéntanos de ti</h1>
    <label className="field">¿Cómo te llamas?<input autoFocus autoComplete="given-name" required minLength={2} maxLength={60} value={value.name} onChange={e => change('name', e.target.value)} placeholder="Tu nombre" /></label>
+   <label className="field">¿En qué universidad estudias? <span className="optional">opcional</span><input list="ob-universities" autoComplete="organization" maxLength={100} value={value.university} onChange={e => change('university', e.target.value)} placeholder="Escribe o elige tu universidad" /><datalist id="ob-universities">{UNIVERSITIES.map(u => <option key={u} value={u} />)}</datalist></label>
    <span className="field-title">¿Qué estudias?</span>
    <div className="ob-careers">{CAREERS.map(c => <button type="button" key={c.name} className={'ob-tag' + (!otherCareer && value.career === c.name ? ' on' : '')} aria-pressed={!otherCareer && value.career === c.name} onClick={() => pickCareer(c.name)}>{c.name}</button>)}<button type="button" className={'ob-tag' + (otherCareer ? ' on' : '')} aria-pressed={otherCareer} onClick={() => { setOtherCareer(true); setValue(p => ({ ...p, career: '', target: '' })); }}>Otra carrera</button></div>
    {otherCareer ? <label className="field">Escribe tu carrera<input autoFocus required minLength={2} maxLength={100} value={value.career} onChange={e => setValue(p => ({ ...p, career: e.target.value, target: '' }))} placeholder="Ej. Psicología" /></label> : null}
