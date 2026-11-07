@@ -48,7 +48,6 @@ function OpportunityCard({item,saved,onOpen,onSave,compact=false}:{item:Opportun
  return <article className={cx('opportunity-card',compact&&'compact')}>
   <div className="card-top"><span className={cx('company-icon','hue-'+typeMeta(item.type).hue)}>{initials(item.organization)}</span><div className="company-name">{item.organization}<span>{item.format} · {item.location}</span></div><button className={cx('icon-button','save-button',saved&&'is-saved')} aria-label={saved?'Quitar de guardados':'Guardar '+item.title} aria-pressed={saved} onClick={onSave}><Bookmark size={20} fill={saved?'currentColor':'none'}/></button></div>
   <button className="card-title-button" onClick={onOpen}><h3>{item.title}</h3><ArrowUpRight size={19}/></button>
-  {!compact?<p className="card-description">{item.description}</p>:null}
   <div className="card-tags"><Tag tone={'hue-'+typeMeta(item.type).hue}><Icon size={12}/>{item.type}</Tag><Tag>{item.costLabel}</Tag></div>
   <div className="card-footer"><CalendarDays size={14}/><b className="card-date">{dateLabelOf(item)}</b><button onClick={onOpen} aria-label={'Ver '+item.title}><ArrowRight size={17}/></button></div>
  </article>
