@@ -30,6 +30,14 @@ export function statusOf(o:Opportunity,now=new Date()) {
  if(o.availability==='permanente') return 'A tu ritmo';
  return 'Verificar convocatoria';
 }
+/** Fecha visible en cada tarjeta, o una indicación clara si no tiene fecha. */
+export function dateLabelOf(o:Opportunity) {
+ if(o.deadline) return 'Cierra el '+shortDate(o.deadline);
+ if(o.dateLabel) return o.dateLabel;
+ if(o.availability==='permanente') return 'Sin fecha · empieza cuando quieras';
+ if(o.availability==='próxima convocatoria') return 'Fecha por anunciar';
+ return 'Sin fecha publicada';
+}
 export function freshness(o:Opportunity,now=new Date()) {
  const t=new Date(o.lastVerified+'T00:00:00-05:00').getTime();
  return !Number.isFinite(t)||now.getTime()-t>14*86400000 ? 'Requiere revisión' : 'Fuente revisada';

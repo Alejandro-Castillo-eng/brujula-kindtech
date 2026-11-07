@@ -2,7 +2,7 @@ import {useState,useEffect,useRef,useCallback,useMemo} from 'react';
 import {Rocket,Home,Compass,Route,Users,UserRound,ArrowUpRight,ArrowRight,ArrowLeft,Bookmark,Search,SlidersHorizontal,Check,Plus,X,ChevronRight,Bell,GraduationCap,HeartHandshake,BriefcaseBusiness,Globe,CalendarDays,CheckCircle2,ExternalLink,ShieldCheck,Settings2,FolderOpen,Send,Download,Trash2,Lightbulb,Target,Sparkles,BookOpen,Mail} from 'lucide-react';
 import type {ReactNode} from 'react';
 import type {Bootstrap,Opportunity,Mentor} from '@/lib/types';
-import {TYPES,searchCatalog,buildRoute,relevance,statusOf,freshness,shortDate,normalize} from '@/lib/logic';
+import {TYPES,dateLabelOf,searchCatalog,buildRoute,relevance,statusOf,freshness,shortDate,normalize} from '@/lib/logic';
 import {ProfileForm,OpportunityForm,MentorForm,FeedbackForm} from './forms';
 import {Onboarding} from './onboarding';
 import {DragScroll} from './drag-scroll';
@@ -50,7 +50,7 @@ function OpportunityCard({item,saved,onOpen,onSave,compact=false}:{item:Opportun
   <button className="card-title-button" onClick={onOpen}><h3>{item.title}</h3><ArrowUpRight size={19}/></button>
   {!compact?<p className="card-description">{item.description}</p>:null}
   <div className="card-tags"><Tag tone={'hue-'+typeMeta(item.type).hue}><Icon size={12}/>{item.type}</Tag><Tag>{item.costLabel}</Tag></div>
-  <div className="card-footer"><span className="source-dot"/>{item.deadline?'Cierra el '+shortDate(item.deadline):statusOf(item)}<button onClick={onOpen} aria-label={'Ver '+item.title}><ArrowRight size={17}/></button></div>
+  <div className="card-footer"><CalendarDays size={14}/><b className="card-date">{dateLabelOf(item)}</b>{!item.deadline&&statusOf(item)!=='A tu ritmo'?<span className="card-status">· {statusOf(item)}</span>:null}<button onClick={onOpen} aria-label={'Ver '+item.title}><ArrowRight size={17}/></button></div>
  </article>
 }
 function CompassArt(){return <div className="compass-art" aria-hidden="true"><div className="orbit one"/><div className="orbit two"/><div className="art-star">✦</div><div className="art-star small">✧</div><div className="compass-disc"><span className="compass-n">N</span><div className="needles"><div className="needle upper"/><div className="needle lower"/></div><span className="compass-center"/></div><span className="art-dot"/></div>}
