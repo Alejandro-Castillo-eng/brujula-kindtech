@@ -703,38 +703,6 @@
   "lastVerified": "2026-11-07"
  },
  {
-  "id": "bcp-practicas",
-  "title": "Programa de prácticas del BCP",
-  "organization": "Banco de Crédito del Perú (BCP)",
-  "type": "práctica",
-  "url": "https://www.viabcp.com/blog-bcp/mejor-empresa-practicas-profesionales",
-  "description": "Prácticas preprofesionales con convocatorias periódicas para estudiantes universitarios. Para egresados existe el programa Talento Joven.",
-  "skills": [
-   "Excel",
-   "Análisis de datos",
-   "Comunicación",
-   "Trabajo en equipo"
-  ],
-  "categories": [
-   "Negocios",
-   "Finanzas",
-   "Datos",
-   "Tecnología",
-   "Empleabilidad"
-  ],
-  "costLabel": "Sin costo para postular",
-  "format": "Según el puesto",
-  "location": "Perú",
-  "deadline": null,
-  "availability": "verificar convocatoria",
-  "statusNote": "Según el BCP, las prácticas preprofesionales son para estudiantes desde 7.º ciclo.",
-  "evidence": "El blog oficial del BCP describe convocatorias regulares de prácticas preprofesionales desde 7.º ciclo y el programa Talento Joven para egresados. La página no se pudo abrir directamente; el contenido se confirmó mediante el buscador.",
-  "sourceUrls": [
-   "https://www.viabcp.com/blog-bcp/mejor-empresa-practicas-profesionales"
-  ],
-  "lastVerified": "2026-11-07"
- },
- {
   "id": "ieee-unmsm",
   "title": "Eventos de la Rama Estudiantil IEEE UNMSM",
   "organization": "Rama Estudiantil IEEE UNMSM",

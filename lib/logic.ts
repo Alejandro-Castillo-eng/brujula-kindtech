@@ -3,7 +3,7 @@ import { keywordsForCareer } from './careers.ts';
 export const normalize = (value:string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 export const AREAS = ['Marketing y comunicación','Datos y analítica','Tecnología','Negocios y gestión','Diseño y creatividad','Impacto social'];
 export const SKILLS = ['Excel','Power BI','Python','Marketing digital','Comunicación','Trabajo en equipo','Inglés','Diseño','Programación','Gestión de proyectos','Liderazgo','Análisis de datos'];
-export const TYPES = ['Todos','Curso','Voluntariado','Programa','Evento','Práctica'];
+export const TYPES = ['Todos','Curso','Voluntariado','Programa','Evento'];
 export const DEFAULT_PROFILE:Profile = {name:'',career:'',university:'',cycle:6,target:AREAS[0],skills:[],hours:4,bio:''};
 const areaWords:Record<string,string[]> = {
  [AREAS[0]]:['marketing','contenido','comunicacion','redes','ventas'],
@@ -42,7 +42,6 @@ export function searchCatalog(items:Opportunity[],query:string,type='Todos',free
  if(type==='Todos') {
   if(/\b(curso|cursos)\b/.test(q)) inferredType='Curso';
   else if(/\b(voluntariado|voluntariados)\b/.test(q)) inferredType='Voluntariado';
-  else if(/\b(practica|practicas)\b/.test(q)) inferredType='Práctica';
  }
  const stop=new Set(['busco','buscar','quiero','muestrame','encuentra','oportunidades','oportunidad','para','de','en','y','con','que','me','un','una','los','las','el','la','soy','estudiante','estudiantes','curso','cursos','voluntariado','voluntariados','gratis','gratuito','gratuitos','gratuita','gratuitas','virtual','virtuales','remoto','remotos','online','sin','costo','practica','practicas','mi','aprender']);
  const terms=q.split(/[^a-z0-9]+/).filter(w=>w.length>1&&!stop.has(w));
