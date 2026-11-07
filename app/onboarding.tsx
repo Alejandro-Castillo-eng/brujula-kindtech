@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { ReactNode } from 'react';
-import { ArrowLeft, ArrowRight, Check, Megaphone, ChartColumn, Laptop, Briefcase, Palette, HeartHandshake, Lock, Sparkles } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, Megaphone, ChartColumn, Laptop, Briefcase, Palette, HeartHandshake, Sparkles } from 'lucide-react';
 import type { Profile } from '@/lib/types';
 import { AREAS, DEFAULT_PROFILE } from '@/lib/logic';
 import { CAREERS, TRANSVERSAL_AREAS, UNIVERSITIES, areasForCareer, skillsForCareer } from '@/lib/careers';
@@ -44,7 +44,6 @@ export function Onboarding({ initialStep = 0, busy, art, onSave, onSkip, onFinis
    <span className="ob-pill">TU FUTURO, A TU RITMO</span>
    <h1>Tu talento tiene un camino.</h1>
    <p className="ob-lead">Responde 3 preguntas rápidas y te mostramos por dónde empezar.</p>
-   <ul className="ob-facts"><li><Sparkles size={16} /> Menos de 1 minuto</li><li><Lock size={16} /> Sin cuenta: tus datos se borran al cerrar la página</li></ul>
   </div>
   <div className="ob-footer">
    <button className="button full" onClick={() => setStep(1)}>Empezar <ArrowRight size={16} /></button>
