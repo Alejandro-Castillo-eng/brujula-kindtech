@@ -1,4 +1,3 @@
-'use client';
 import {useState} from 'react';
 import {ArrowRight,ArrowLeft,Check,Clock,Star,Trash2,HeartHandshake} from 'lucide-react';
 import type {FormEvent} from 'react';

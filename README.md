@@ -1,10 +1,8 @@
 # Brújula · Tu próximo paso
 
-MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en escritorio presenta un marco de teléfono. Nombre provisional. No requiere instalar una aplicación.
+MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en escritorio presenta un marco de teléfono. Nombre provisional. Es pública: no requiere cuenta, inicio de sesión ni instalar nada.
 
-[Abrir el MVP publicado](https://brujula-kindtech-2026.josealejandroc448327.chatgpt.site/) · [Repositorio](https://github.com/Alejandro-Castillo-eng/brujula-kindtech)
-
-El sitio publicado es privado y requiere iniciar sesión con la cuenta propietaria de ChatGPT. El repositorio conserva el código, las migraciones y las instrucciones para ejecutarlo localmente.
+**[Abrir Brújula](https://alejandro-castillo-eng.github.io/brujula-kindtech/)** · [Repositorio](https://github.com/Alejandro-Castillo-eng/brujula-kindtech)
 
 ![Vista móvil del MVP con un perfil de prueba](docs/brujula-movil.jpg)
 
@@ -15,58 +13,59 @@ El sitio publicado es privado y requiere iniciar sesión con la cuenta propietar
 - Búsqueda por palabras, tipo, gratuidad y modalidad. Reconoce expresiones sencillas como «cursos gratis virtuales de marketing» mediante reglas, sin IA.
 - Guardados y seguimiento: guardada, en proceso, postulada y completada.
 - Ruta orientativa de cinco pasos, progreso persistente y descarga de texto.
-- Catálogo personal: crear, editar, guardar borradores, publicar y eliminar oportunidades añadidas por el usuario.
-- Comprobación de enlaces del catálogo inicial. Señala respuestas fallidas y redirecciones; una respuesta HTTP correcta no demuestra que una convocatoria siga abierta.
-- Comunidad: perfiles de mentor voluntarios y solicitudes con estados. Los tres perfiles iniciales están señalados como demostración y permiten simular una aceptación.
-- Opiniones, exportación de perfil/guardados/progreso/solicitudes/oportunidades propias y eliminación de datos personales.
+- Catálogo personal: crear, editar, guardar borradores, publicar y eliminar oportunidades propias.
+- Comunidad: perfil de mentor propio y solicitudes a tres mentores de demostración, señalados como tales, que permiten simular una aceptación.
+- Opiniones, exportación de perfil/guardados/progreso/solicitudes/oportunidades propias y eliminación de datos.
 
-## Arquitectura y acceso
+## Arquitectura
 
-React + TypeScript, Vinext/Vite, Worker y base de datos D1. La API `/api/app` autentica cada solicitud con la identidad proporcionada por Sites. Las consultas delimitan los datos privados por usuario. El despliegue inicial es privado para el propietario y requiere sesión de ChatGPT; aún no es un enlace abierto para todos los compañeros.
+Sitio estático: React + TypeScript compilado con Vite y publicado en GitHub Pages. No hay servidor, base de datos ni inicio de sesión.
 
-`app/mobile-app.tsx` contiene la navegación y las vistas; `app/forms.tsx`, los formularios; `app/style.css`, el diseño. `app/api/app/route.ts` implementa persistencia, validación y permisos. `lib/logic.ts` implementa filtros, vigencia y rutas. `lib/catalog.json` conserva la evidencia y las fuentes del catálogo inicial. `db/schema.ts` y `drizzle/` definen las tablas y migraciones.
+Todos los datos de cada persona (perfil, guardados, progreso, oportunidades propias, solicitudes y opiniones) se guardan **solo en su navegador** (`localStorage`). No se envían a ningún sitio. Si la persona borra los datos del navegador o cambia de dispositivo, empieza de cero; puede descargar una copia con «Exportar mis datos».
 
-Los registros añadidos por cada usuario pertenecen a su catálogo. El catálogo inicial se mantiene en código y requiere una migración de datos para modificar registros ya cargados; editar únicamente el JSON no reemplaza registros existentes. No hay todavía un panel editorial compartido con roles.
+| Archivo | Contenido |
+|---|---|
+| `app/main.tsx`, `index.html` | Punto de entrada |
+| `app/mobile-app.tsx` | Navegación y vistas |
+| `app/forms.tsx` | Formularios |
+| `app/style.css` | Diseño |
+| `lib/local-store.ts` | Almacenamiento local, validación (Zod) y reglas de cada acción |
+| `lib/logic.ts` | Filtros, vigencia, relevancia y rutas |
+| `lib/catalog.json` | Catálogo inicial con su evidencia y fuentes |
+| `.github/workflows/pages.yml` | Comprueba, compila y publica en GitHub Pages |
+
+Para cambiar el catálogo inicial basta con editar `lib/catalog.json` y subir el cambio a `main`: GitHub Pages se actualiza solo en uno o dos minutos.
 
 ## Desarrollo local
 
-Requiere Node 24 y npm. Las dependencias ya están instaladas en este entorno.
+Requiere Node 22.18 o superior.
 
-```powershell
+```bash
 npm ci
-npm run build
-node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_flawless_namorita.sql
-npm run dev -- --hostname 127.0.0.1
+npm run dev
 ```
-
-La migración se ejecuta una sola vez en una base nueva. El entorno local actual ya la tiene aplicada. El servidor de desarrollo usa la identidad de prueba que suministra el starter de Sites. No traslades esa identidad simulada a producción.
-
-Para comprobar el Worker construido, en otra terminal:
-
-```powershell
-npm run start -- --port 5174
-node tests/api-smoke.mjs
-```
-
-El test usa identidades sintéticas inyectadas únicamente en el Worker local; el dominio publicado recibe la identidad del servicio de acceso de Sites. No ejecutes este test contra producción. Sus registros temporales se eliminan al terminar.
 
 ## Verificación
 
-```powershell
-npx tsc --noEmit
-node --test tests/logic.test.mjs
-node tests/api-smoke.mjs
+```bash
+npm run typecheck
+npm test
+npm run build
 ```
 
-Se comprobaron la persistencia, el aislamiento entre usuarios, guardados, publicación de borradores, permisos de edición, validación de URLs, solicitudes de demostración, opiniones y rechazo de un origen distinto. Las pruebas de lógica cubren filtros, vencimientos en horario de Lima, rutas y fuentes. También se recorrió la interfaz móvil en el navegador.
+Las pruebas cubren filtros, vencimientos en horario de Lima, rutas, validación de URLs y el almacenamiento local (persistencia, validación, catálogo personal, progreso, mentoría de demostración y eliminación de datos). La misma verificación se ejecuta en GitHub Actions en cada cambio.
+
+## Publicación
+
+Cada push a `main` publica el sitio en https://alejandro-castillo-eng.github.io/brujula-kindtech/. La primera vez hay que activar GitHub Pages: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
 ## Límites de esta entrega
 
-La IA generativa no está conectada: falta configurar una clave autorizada. No se presenta el filtro por palabras como un modelo de IA. La propuesta es usar un único modelo económico para transformar una consulta en filtros validados, consultando después la base de datos. No debe inventar oportunidades ni enlaces. La recomendación y estimación están en `docs/RECOMENDACION_IA.md`.
+Al no haber servidor, los datos no se comparten entre personas ni dispositivos. Los mentores son de ejemplo: las solicitudes no llegan a nadie, y las opiniones se quedan en el navegador de quien las escribe. Una comunidad real o recoger opiniones requerirá un backend o un servicio externo.
 
-La revisión de fuentes es manual, apoyada por la comprobación de enlaces a demanda. Las convocatorias con fecha conocida desaparecen de las búsquedas al vencer; las fechas desconocidas exigen revisión. No hay extracción automática, tarea programada ni garantía de vigencia. Algunas fuentes pueden bloquear comprobaciones automáticas.
+La IA generativa no está conectada. No se presenta el filtro por palabras como un modelo de IA. La propuesta y estimación están en `docs/RECOMENDACION_IA.md`; integrarla necesitaría un servidor que guarde la clave de API, porque no puede ponerse en un sitio público.
 
-Los mentores iniciales son de ejemplo. Las solicitudes reales quedan en el buzón de la aplicación; no se envían correos ni se reserva una videollamada. Todavía no se ha realizado validación con estudiantes, integrado cobros, ni medido la calidad de recomendaciones con usuarios reales.
+La revisión de fuentes es manual. Las convocatorias con fecha conocida desaparecen de las búsquedas al vencer; las fechas desconocidas exigen revisión. No hay extracción automática ni garantía de vigencia.
 
 ## Operación del piloto
 
