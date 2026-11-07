@@ -8,7 +8,8 @@ MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en esc
 
 ## Lo que funciona
 
-- Inicio, perfil de tres pasos, objetivo y disponibilidad semanal.
+- Bienvenida de menos de un minuto la primera vez: tres pasos de un toque (sobre ti, área de interés, habilidades y tiempo) y un resumen con fortalezas, habilidades por reforzar y dos oportunidades para empezar. Se puede saltar con «Ahora no» o «Solo quiero explorar».
+- Inicio, edición del perfil, objetivo y disponibilidad semanal.
 - Catálogo inicial de 14 oportunidades recopiladas de fuentes originales, con modalidad, costo, requisitos, enlace y fecha de revisión.
 - Búsqueda por palabras, tipo, gratuidad y modalidad. Reconoce expresiones sencillas como «cursos gratis virtuales de marketing» mediante reglas, sin IA.
 - Guardados y seguimiento: guardada, en proceso, postulada y completada.
@@ -27,6 +28,7 @@ Todos los datos de cada persona (perfil, guardados, progreso, oportunidades prop
 |---|---|
 | `app/main.tsx`, `index.html` | Punto de entrada |
 | `app/mobile-app.tsx` | Navegación y vistas |
+| `app/onboarding.tsx` | Primer recorrido (bienvenida, 3 pasos y resumen) |
 | `app/forms.tsx` | Formularios |
 | `app/style.css` | Diseño |
 | `lib/local-store.ts` | Almacenamiento local, validación (Zod) y reglas de cada acción |
