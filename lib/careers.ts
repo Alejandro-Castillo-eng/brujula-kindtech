@@ -101,7 +101,7 @@ const linkedinPeople = (keywords: string) => `https://www.linkedin.com/search/re
 export function referentSearches(profile: { career: string; university?: string }): { title: string; sub: string; url: string }[] {
  const career = findCareer(profile.career);
  const careerName = career?.name || profile.career.trim();
- const list = (career?.roles || GENERIC_ROLES).map(role => ({ title: role, sub: `Trayectorias en Perú · ${careerName}`, url: linkedinPeople(`${role} ${careerName} Perú`) }));
+ const list = (career?.roles || GENERIC_ROLES).map(role => ({ title: role, sub: 'Trayectorias en Perú', url: linkedinPeople(`${role} ${careerName} Perú`) }));
  const uni = (profile.university || '').trim();
  if (uni) {
   const short = uni.match(/\(([^)]+)\)/)?.[1] || uni;
