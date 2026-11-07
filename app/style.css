@@ -75,6 +75,5 @@ span.ob-tag{padding:7px 12px;font-size:12px}
 .ob-pick{background:white;border:1px solid var(--border);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:5px}
 .ob-pick b{font-size:15px;line-height:1.4}
 .ob-pick small{font-size:12px;color:var(--muted)}
-.ob-note{font-size:12px;line-height:1.6;color:#756b5c;margin:16px 0 0}
 @keyframes pop{0%{transform:scale(.6);opacity:0}100%{transform:scale(1);opacity:1}}
 @media(max-width:360px){.ob-hero .compass-art{display:block}.ob-scroll{padding-left:18px;padding-right:18px}}

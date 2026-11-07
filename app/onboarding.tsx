@@ -72,7 +72,6 @@ export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, 
      <div className="ob-summary-row"><small>Tu ritmo</small><span>{value.hours} horas por semana</span></div>
     </div>
     {picks.length ? <><h2 className="ob-subtitle">Para empezar</h2><div className="ob-picks">{picks.map(o => <div className="ob-pick" key={o.id}><b>{o.title}</b><small>{o.organization} · {o.costLabel}</small></div>)}</div></> : null}
-    <p className="ob-note">Sugerencias según tu área y las etiquetas del catálogo. No es una evaluación de tus capacidades.</p>
    </div>
    <div className="ob-footer">
     <button className="button full" onClick={() => onFinish('route')}>Ver mi ruta <ArrowRight size={16} /></button>
