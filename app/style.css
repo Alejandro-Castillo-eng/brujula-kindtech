@@ -161,3 +161,27 @@ span.ob-tag{padding:7px 12px;font-size:12px}
 .active-filters{display:flex;align-items:center;flex-wrap:wrap;gap:7px}.clear-filters{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:600;color:var(--orange-text);padding:5px 4px}
 .linkedin-link{align-self:flex-start;margin-left:auto}.linkedin-link.is-example{cursor:default}.linkedin-link.is-example:hover{transform:none}
 .referents-intro{font-size:14px;color:var(--muted);margin:-8px 0 16px}
+/* Comunidad tipo «match»: mazo de tarjetas deslizables */
+.swipe-deck{outline:none;padding-bottom:6px}
+.swipe-stack{position:relative;display:grid}
+.swipe-card{grid-area:1/1;touch-action:pan-y;user-select:none;-webkit-user-select:none;position:relative}
+.swipe-card.is-top{z-index:2;cursor:grab;transition:none}
+.swipe-card.is-top:active{cursor:grabbing}
+.swipe-card.is-resting{transition:transform .25s ease}
+.swipe-card.is-next{z-index:1;transform:scale(.95) translateY(12px);opacity:.75;pointer-events:none}
+.swipe-card .mentor-card{animation:none;box-shadow:0 12px 30px #4a3a2a14;min-height:260px}
+.swipe-mentor .mentor-bio{-webkit-line-clamp:4}
+.match-line{font-size:13px;font-weight:700;color:var(--hue-fg);background:var(--hue-bg);border-radius:10px;padding:7px 10px;margin:0 0 12px}
+.swipe-stamp{position:absolute;top:22px;z-index:3;font-size:18px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border:3px solid;border-radius:10px;pointer-events:none;background:#fffc}
+.swipe-stamp.right{left:18px;color:#1d7650;transform:rotate(-12deg)}
+.swipe-stamp.left{right:18px;color:#bd3769;transform:rotate(12deg)}
+.swipe-actions{display:flex;align-items:center;justify-content:center;gap:26px;margin-top:22px}
+.swipe-btn{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;box-shadow:0 8px 20px #4a3a2a1f;transition:transform .15s}
+.swipe-btn:hover{transform:scale(1.08)}
+.swipe-btn:active{transform:scale(.94)}
+.swipe-btn.pass{color:#bd3769;border:2px solid #f6c9d8}
+.swipe-btn.like{color:#fff;background:linear-gradient(135deg,#e96a42,#d9467a);box-shadow:0 8px 22px #d9467a40}
+.swipe-btn:disabled{opacity:.6}
+.swipe-count{font-size:13px;color:var(--muted);min-width:70px;text-align:center}
+.button-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){.swipe-card.is-resting{transition:none}}

@@ -17,7 +17,7 @@ MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en esc
 - Guardados y seguimiento: guardada, en proceso, postulada y completada.
 - Ruta orientativa de cinco pasos, progreso persistente y descarga de texto.
 - Catálogo personal: crear, editar, guardar borradores, publicar y eliminar oportunidades propias.
-- Comunidad: perfil de mentor propio y solicitudes a tres mentores de demostración, señalados como tales, que permiten simular una aceptación.
+- Comunidad tipo «match»: mazo de tarjetas que se deslizan a la derecha (conectar, envía la solicitud) o a la izquierda (pasar), también con botones o flechas del teclado. Cada tarjeta muestra lo que se tiene en común (área, carrera, temas) y el mazo se ordena por afinidad. Los perfiles de ejemplo están señalados al conectar.
 - Opiniones, exportación de perfil/guardados/progreso/solicitudes/oportunidades propias y eliminación de datos.
 
 ## Arquitectura
