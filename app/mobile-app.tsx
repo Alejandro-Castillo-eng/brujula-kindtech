@@ -1,5 +1,5 @@
 import {useState,useEffect,useRef,useCallback,useMemo} from 'react';
-import {Rocket,Briefcase,Home,Compass,Route,Users,UserRound,ArrowUpRight,ArrowRight,ArrowLeft,Bookmark,Search,SlidersHorizontal,Check,Plus,X,ChevronRight,Bell,GraduationCap,HeartHandshake,BriefcaseBusiness,Globe,CalendarDays,CheckCircle2,ExternalLink,ShieldCheck,Settings2,FolderOpen,Send,Download,Trash2,Lightbulb,Target,Sparkles,BookOpen,Mail} from 'lucide-react';
+import {Rocket,Home,Compass,Route,Users,UserRound,ArrowUpRight,ArrowRight,ArrowLeft,Bookmark,Search,SlidersHorizontal,Check,Plus,X,ChevronRight,Bell,GraduationCap,HeartHandshake,BriefcaseBusiness,Globe,CalendarDays,CheckCircle2,ExternalLink,ShieldCheck,Settings2,FolderOpen,Send,Download,Trash2,Lightbulb,Target,Sparkles,BookOpen,Mail} from 'lucide-react';
 import type {ReactNode} from 'react';
 import type {Bootstrap,Opportunity,Mentor} from '@/lib/types';
 import {TYPES,searchCatalog,buildRoute,relevance,statusOf,freshness,shortDate,normalize} from '@/lib/logic';
@@ -26,7 +26,7 @@ type Tab='home'|'explore'|'route'|'community'|'profile'|'saved'|'catalog'|'inbox
 type Modal={type:'opportunity';item:Opportunity}|{type:'mentor';item:Mentor}|{type:'profile'}|{type:'add';item?:Opportunity}|{type:'join'}|{type:'feedback'}|{type:'privacy'}|null;
 const NAV=[{id:'home',label:'Inicio',icon:Home},{id:'explore',label:'Explorar',icon:Compass},{id:'route',label:'Mi ruta',icon:Route},{id:'community',label:'Comunidad',icon:Users},{id:'profile',label:'Mi perfil',icon:UserRound}] as const;
 // Un color por tipo de oportunidad, usado en toda la app (íconos, etiquetas y avatares).
-const TYPE_META:Record<string,{filter:string;plural:string;icon:typeof BookOpen;hue:string}>={curso:{filter:'Curso',plural:'Cursos',icon:GraduationCap,hue:'blue'},programa:{filter:'Programa',plural:'Programas',icon:Rocket,hue:'purple'},evento:{filter:'Evento',plural:'Eventos',icon:CalendarDays,hue:'pink'},voluntariado:{filter:'Voluntariado',plural:'Voluntariados',icon:HeartHandshake,hue:'green'},practica:{filter:'Práctica',plural:'Prácticas',icon:Briefcase,hue:'amber'}};
+const TYPE_META:Record<string,{filter:string;plural:string;icon:typeof BookOpen;hue:string}>={curso:{filter:'Curso',plural:'Cursos',icon:GraduationCap,hue:'blue'},programa:{filter:'Programa',plural:'Programas',icon:Rocket,hue:'purple'},evento:{filter:'Evento',plural:'Eventos',icon:CalendarDays,hue:'pink'},voluntariado:{filter:'Voluntariado',plural:'Voluntariados',icon:HeartHandshake,hue:'green'}};
 const typeMeta=(type:string)=>TYPE_META[normalize(type)]||TYPE_META[type]||{filter:'Todos',plural:type,icon:BookOpen,hue:'orange'};
 const typeIcons:Record<string,typeof BookOpen>=Object.fromEntries(Object.entries(TYPE_META).map(([k,v])=>[k,v.icon]));
 const initials=(name:string)=>name.split(' ').map(s=>s[0]).filter(Boolean).slice(0,2).join('').toUpperCase();
