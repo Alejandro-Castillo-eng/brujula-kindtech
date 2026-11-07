@@ -213,3 +213,12 @@ span.ob-tag{padding:7px 12px;font-size:12px}
 .ask-input input{flex:1;border:0;outline:0;font-size:14px;background:transparent;min-height:36px}
 .ask-input button{width:36px;height:36px;border-radius:10px;color:#fff;background:#4f46e5;display:flex;align-items:center;justify-content:center}
 .ask-input button:disabled{opacity:.4}
+/* Mensajes con personas que aceptaron la solicitud */
+.request-chat-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;flex-wrap:wrap}
+.chat{display:flex;flex-direction:column;gap:12px}
+.chat-thread{display:flex;flex-direction:column;gap:8px;max-height:55vh;overflow-y:auto;padding:2px}
+.chat-bubble{font-size:14px;line-height:1.5;border-radius:14px;padding:10px 12px;max-width:85%}
+.chat-bubble.me{align-self:flex-end;background:var(--orange);color:#fff;border-bottom-right-radius:4px}
+.chat-bubble.them{align-self:flex-start;background:#f3f1ec;color:var(--ink);border-bottom-left-radius:4px}
+.chat-bubble small{display:block;font-size:11px;color:var(--muted);margin-top:4px;font-style:italic}
+.chat-empty{font-size:13px;color:var(--muted);text-align:center;margin:6px 0}
