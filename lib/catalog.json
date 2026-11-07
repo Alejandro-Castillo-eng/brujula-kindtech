@@ -861,5 +861,38 @@
    "https://www.skills.google/paths"
   ],
   "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "vt-quantum-summer-school",
+  "title": "Escuela de verano de computación cuántica de Virginia Tech",
+  "organization": "Virginia Tech (VTQ) · C2QA",
+  "type": "programa",
+  "url": "https://vtq.vt.edu/outreach/Quantum-Information-Science-and-Engineering-High-School-level-Summer-School.html",
+  "description": "Taller virtual de cuatro días sobre ciencia de la información cuántica: superposición, entrelazamiento, compuertas y circuitos, teleportación y algoritmos cuánticos. No necesitas saber mecánica cuántica ni programar.",
+  "skills": [
+   "Computación cuántica",
+   "Algoritmos cuánticos",
+   "IBM Quantum Composer"
+  ],
+  "categories": [
+   "Tecnología",
+   "Ciencia",
+   "Ingeniería",
+   "Programación"
+  ],
+  "costLabel": "Costo no indicado · confírmalo al postular",
+  "format": "Virtual por Zoom · en vivo",
+  "location": "Desde Perú · confirma la elegibilidad",
+  "deadline": null,
+  "availability": "próxima convocatoria",
+  "durationLabel": "4 días · fines de julio",
+  "language": "Inglés",
+  "statusNote": "Pensada para escolares y universitarios de los primeros años. La edición 2026 fue del 27 al 30 de julio; la postulación se hace desde la página de Brookhaven.",
+  "evidence": "La página oficial de Virginia Tech indica que la edición 2026 fue del 27 al 30 de julio por Zoom, que solo se requiere aritmética y álgebra básica y que se postula mediante el programa de Brookhaven National Laboratory. Brookhaven la describe como un taller virtual de cuatro días para estudiantes escolares y universitarios, creado por la profesora Sophia Economou con el centro C2QA.",
+  "sourceUrls": [
+   "https://vtq.vt.edu/outreach/Quantum-Information-Science-and-Engineering-High-School-level-Summer-School.html",
+   "https://www.bnl.gov/quantumcenter/student-opportunities.php"
+  ],
+  "lastVerified": "2026-11-07"
  }
 ]
