@@ -32,7 +32,7 @@ Todos los datos de cada persona (perfil, guardados, progreso, oportunidades prop
 | `lib/local-store.ts` | Almacenamiento local, validación (Zod) y reglas de cada acción |
 | `lib/logic.ts` | Filtros, vigencia, relevancia y rutas |
 | `lib/catalog.json` | Catálogo inicial con su evidencia y fuentes |
-| `.github/workflows/pages.yml` | Comprueba, compila y publica en GitHub Pages |
+| `.github/workflows/pages.yml` | Comprueba, compila y publica en la rama `gh-pages` |
 
 Para cambiar el catálogo inicial basta con editar `lib/catalog.json` y subir el cambio a `main`: GitHub Pages se actualiza solo en uno o dos minutos.
 
@@ -57,7 +57,7 @@ Las pruebas cubren filtros, vencimientos en horario de Lima, rutas, validación 
 
 ## Publicación
 
-Cada push a `main` publica el sitio en https://alejandro-castillo-eng.github.io/brujula-kindtech/. La primera vez hay que activar GitHub Pages: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+Cada push a `main` comprueba y compila la app, y publica el resultado en la rama `gh-pages`, que GitHub Pages sirve en https://alejandro-castillo-eng.github.io/brujula-kindtech/. Si el sitio no aparece, revisa **Settings → Pages → Source: Deploy from a branch → `gh-pages` / `(root)`**.
 
 ## Límites de esta entrega
 
