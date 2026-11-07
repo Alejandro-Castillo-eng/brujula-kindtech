@@ -11,7 +11,7 @@ MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en esc
 - Bienvenida de menos de un minuto la primera vez: tres pasos de un toque (sobre ti, área de interés, habilidades y tiempo) y un resumen con fortalezas, habilidades por reforzar y dos oportunidades para empezar. Se puede saltar con «Ahora no» o «Solo quiero explorar».
 - Carreras iniciales: la carrera se elige de una lista corta (`lib/careers.ts`) y el paso de áreas muestra solo las relacionadas con ella. Si la carrera aún no está cubierta, se dice con claridad y se ofrecen áreas que sirven en cualquier carrera.
 - Inicio, edición del perfil, objetivo y disponibilidad semanal.
-- Catálogo inicial de 14 oportunidades recopiladas de fuentes originales, con modalidad, costo, requisitos, enlace y fecha de revisión.
+- Catálogo inicial de 25 oportunidades recopiladas de fuentes originales (cursos, programas en vivo, escuelas de verano, hackathons, prácticas, voluntariados y eventos IEEE), con modalidad, costo, requisitos, enlace y fecha de revisión.
 - Búsqueda por palabras, tipo, gratuidad y modalidad. Reconoce expresiones sencillas como «cursos gratis virtuales de marketing» mediante reglas, sin IA.
 - Guardados y seguimiento: guardada, en proceso, postulada y completada.
 - Ruta orientativa de cinco pasos, progreso persistente y descarga de texto.

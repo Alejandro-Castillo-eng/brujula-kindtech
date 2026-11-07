@@ -1,448 +1,800 @@
 [
-  {
-    "id": "microsoft-powerbi",
-    "title": "Introducción al análisis de datos con Power BI",
-    "organization": "Microsoft Learn",
-    "type": "curso",
-    "url": "https://learn.microsoft.com/es-es/training/paths/data-analytics-microsoft/",
-    "description": "Explora el trabajo de un analista y aprende a crear informes y paneles con Power BI. Ruta de cuatro módulos sin requisitos previos.",
-    "skills": [
-      "Power BI",
-      "Análisis de datos",
-      "Visualización"
-    ],
-    "categories": [
-      "Datos",
-      "Negocios",
-      "Ingeniería"
-    ],
-    "costLabel": "Formación gratuita",
-    "format": "Virtual · a tu ritmo",
-    "location": "Desde Perú",
-    "deadline": null,
-    "availability": "permanente",
-    "durationLabel": "4 módulos",
-    "language": "Español",
-    "evidence": "La ruta oficial enumera cuatro módulos de análisis, Power BI, Fabric y Copilot; indica que no hay requisitos previos.",
-    "sourceUrls": [
-      "https://learn.microsoft.com/es-es/training/paths/data-analytics-microsoft/",
-      "https://learn.microsoft.com/es-es/training/support/faq"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "microsoft-sql",
-    "title": "Consulta y modificación de datos con SQL",
-    "organization": "Microsoft Learn",
-    "type": "curso",
-    "url": "https://learn.microsoft.com/es-es/training/paths/get-started-querying-with-transact-sql/",
-    "description": "Practica consultas, filtros, combinaciones de tablas y agrupaciones con Transact-SQL. Requiere familiaridad con tablas, por ejemplo en hojas de cálculo.",
-    "skills": [
-      "SQL",
-      "Bases de datos",
-      "Análisis de datos"
-    ],
-    "categories": [
-      "Datos",
-      "Tecnología",
-      "Ingeniería"
-    ],
-    "costLabel": "Formación gratuita",
-    "format": "Virtual · a tu ritmo",
-    "location": "Desde Perú",
-    "deadline": null,
-    "availability": "permanente",
-    "durationLabel": "6 módulos",
-    "language": "Español",
-    "evidence": "La ficha de Microsoft clasifica la ruta como principiante y presenta seis módulos sobre SELECT, filtros, JOIN, subconsultas y agrupaciones.",
-    "sourceUrls": [
-      "https://learn.microsoft.com/es-es/training/paths/get-started-querying-with-transact-sql/"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "python-essentials",
-    "title": "Python Essentials 1",
-    "organization": "Python Institute · OpenEDG",
-    "type": "curso",
-    "url": "https://pythoninstitute.org/python-essentials-1",
-    "description": "Aprende Python desde cero y construye tus primeros programas. El curso prepara para PCEP; el examen de certificación es independiente.",
-    "skills": [
-      "Python",
-      "Programación",
-      "Pensamiento analítico"
-    ],
-    "categories": [
-      "Tecnología",
-      "Datos",
-      "Ingeniería"
-    ],
-    "costLabel": "Curso gratuito",
-    "format": "Virtual · a tu ritmo",
-    "location": "Desde Perú",
-    "deadline": null,
-    "availability": "permanente",
-    "durationLabel": "6–8 semanas sugeridas",
-    "language": "Español disponible",
-    "evidence": "El proveedor identifica el curso como gratuito, de nivel inicial, disponible en español y sin conocimientos previos de programación.",
-    "sourceUrls": [
-      "https://pythoninstitute.org/python-essentials-1"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "cisco-cybersecurity",
-    "title": "Introducción a la ciberseguridad",
-    "organization": "Cisco Networking Academy",
-    "type": "curso",
-    "url": "https://www.netacad.com/courses/introduction-to-cybersecurity",
-    "description": "Conoce amenazas digitales, privacidad y fundamentos de protección de información. Un punto de entrada para explorar la ciberseguridad.",
-    "skills": [
-      "Ciberseguridad",
-      "Privacidad",
-      "Seguridad digital"
-    ],
-    "categories": [
-      "Tecnología",
-      "Ingeniería"
-    ],
-    "costLabel": "Gratuito",
-    "format": "Virtual · a tu ritmo",
-    "location": "Desde Perú",
-    "deadline": null,
-    "availability": "permanente",
-    "durationLabel": "6 horas",
-    "language": "Español disponible",
-    "evidence": "Cisco incluye el curso en su oferta gratuita y autodirigida, con nivel principiante y duración de seis horas.",
-    "sourceUrls": [
-      "https://www.netacad.com/courses/introduction-to-cybersecurity",
-      "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "santander-excel",
-    "title": "Excel: de básico a intermedio",
-    "organization": "Santander Open Academy",
-    "type": "curso",
-    "url": "https://app.santanderopenacademy.com/es/course/excel",
-    "description": "Aprende fórmulas, funciones y tablas dinámicas para organizar y analizar datos. Incluye certificado de finalización y admite participantes de cualquier país mayores de 16 años.",
-    "skills": [
-      "Excel",
-      "Análisis de datos",
-      "Organización"
-    ],
-    "categories": [
-      "Negocios",
-      "Datos",
-      "Finanzas",
-      "Ingeniería"
-    ],
-    "costLabel": "Gratuito · certificado incluido",
-    "format": "Virtual · a tu ritmo",
-    "location": "Desde Perú",
-    "deadline": "2026-12-31",
-    "availability": "verificar convocatoria",
-    "durationLabel": "8 horas",
-    "language": "Español",
-    "evidence": "La página oficial del mismo curso en portugués confirma disponibilidad hasta el 31/12/2026, ocho horas, español entre los idiomas y acceso gratuito desde cualquier país.",
-    "sourceUrls": [
-      "https://www.santanderopenacademy.com/pt_br/courses/excel.html/index.f",
-      "https://app.santanderopenacademy.com/es/course/excel"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "hubspot-inbound",
-    "title": "Certificación de inbound marketing",
-    "organization": "HubSpot Academy",
-    "type": "curso",
-    "url": "https://academy.hubspot.com/es/courses/inbound-marketing",
-    "description": "Diseña contenidos y experiencias para atraer clientes, nutrir oportunidades comerciales y medir campañas. Incluye formación en automatización e IA aplicada al marketing.",
-    "skills": [
-      "Marketing",
-      "Contenido",
-      "Comunicación",
-      "Analítica"
-    ],
-    "categories": [
-      "Marketing",
-      "Negocios",
-      "Comunicaciones"
-    ],
-    "costLabel": "Gratuito · certificación incluida",
-    "format": "Virtual · a tu ritmo",
-    "location": "Desde Perú",
-    "deadline": null,
-    "availability": "permanente",
-    "durationLabel": "5 horas",
-    "language": "Español",
-    "evidence": "La ficha oficial señala curso con certificación gratuita, nueve lecciones, siete cuestionarios y duración de cinco horas y dos minutos.",
-    "sourceUrls": [
-      "https://academy.hubspot.com/es/courses/inbound-marketing"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "hubspot-social",
-    "title": "Estrategia de redes sociales",
-    "organization": "HubSpot Academy",
-    "type": "curso",
-    "url": "https://academy.hubspot.com/es/courses/social-media",
-    "description": "Aprende a planificar contenido, escuchar a una comunidad y medir resultados en redes sociales. Útil para iniciar un proyecto de comunicación digital.",
-    "skills": [
-      "Redes sociales",
-      "Contenido",
-      "Marketing",
-      "Analítica"
-    ],
-    "categories": [
-      "Marketing",
-      "Comunicaciones",
-      "Negocios"
-    ],
-    "costLabel": "Gratuito · certificación incluida",
-    "format": "Virtual · a tu ritmo",
-    "location": "Desde Perú",
-    "deadline": null,
-    "availability": "permanente",
-    "durationLabel": "5 h 45 min",
-    "language": "Español",
-    "evidence": "La página oficial muestra certificación gratuita, diez lecciones y contenidos de estrategia, publicidad, escucha social y retorno de inversión.",
-    "sourceUrls": [
-      "https://academy.hubspot.com/es/courses/social-media"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "hp-networking",
-    "title": "Redes profesionales para crecer",
-    "organization": "HP LIFE · Fundación HP",
-    "type": "curso",
-    "url": "https://www.life-global.org/es/course/438-redes-profesionales-para-el-crecimiento-profesional",
-    "description": "Desarrolla habilidades para iniciar relaciones profesionales, descubrir oportunidades y construir una red de contactos con propósito.",
-    "skills": [
-      "Networking",
-      "Comunicación",
-      "Desarrollo profesional"
-    ],
-    "categories": [
-      "Empleabilidad",
-      "Negocios",
-      "Comunicaciones"
-    ],
-    "costLabel": "Gratuito · certificado de finalización",
-    "format": "Virtual · a tu ritmo",
-    "location": "Desde Perú",
-    "deadline": null,
-    "availability": "permanente",
-    "durationLabel": "A tu ritmo",
-    "language": "Español",
-    "evidence": "El catálogo oficial enlaza esta ficha y describe el desarrollo de contactos y relaciones. HP LIFE declara formación y certificados de finalización gratuitos.",
-    "sourceUrls": [
-      "https://www.life-global.org/es/allcourses",
-      "https://www.life-global.org/es"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "hp-cv",
-    "title": "Currículum y entrevistas de trabajo",
-    "organization": "HP LIFE · Fundación HP",
-    "type": "curso",
-    "url": "https://www.life-global.org/es/course/363-redacci%C3%B3n-de-curr%C3%ADculums-y-entrevistas-de-trabajo",
-    "description": "Prepara tu currículum, carta de presentación y entrevistas para comunicar mejor tu experiencia y tus fortalezas.",
-    "skills": [
-      "CV",
-      "Entrevistas",
-      "Comunicación",
-      "Desarrollo profesional"
-    ],
-    "categories": [
-      "Empleabilidad",
-      "Negocios",
-      "Tecnología",
-      "Marketing"
-    ],
-    "costLabel": "Gratuito · certificado de finalización",
-    "format": "Virtual · a tu ritmo",
-    "location": "Desde Perú",
-    "deadline": null,
-    "availability": "permanente",
-    "durationLabel": "A tu ritmo",
-    "language": "Español",
-    "evidence": "El curso aparece en el catálogo oficial con un enlace específico. La página principal de HP LIFE confirma la gratuidad del programa y sus certificados.",
-    "sourceUrls": [
-      "https://www.life-global.org/es/allcourses",
-      "https://www.life-global.org/es"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "hp-agile",
-    "title": "Gestión de proyectos con Agile",
-    "organization": "HP LIFE · Fundación HP",
-    "type": "curso",
-    "url": "https://www.life-global.org/es/course/383-gesti%C3%B3n-de-proyectos-con-agile",
-    "description": "Explora Scrum y Kanban para organizar el trabajo, colaborar y responder a las necesidades de un proyecto.",
-    "skills": [
-      "Gestión de proyectos",
-      "Scrum",
-      "Kanban",
-      "Trabajo en equipo"
-    ],
-    "categories": [
-      "Tecnología",
-      "Negocios",
-      "Ingeniería"
-    ],
-    "costLabel": "Gratuito · certificado de finalización",
-    "format": "Virtual · a tu ritmo",
-    "location": "Desde Perú",
-    "deadline": null,
-    "availability": "permanente",
-    "durationLabel": "A tu ritmo",
-    "language": "Español",
-    "evidence": "El catálogo de HP LIFE incluye una ficha específica de gestión de proyectos con Agile y menciona Scrum y Kanban.",
-    "sourceUrls": [
-      "https://www.life-global.org/es/allcourses",
-      "https://www.life-global.org/es"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "agape-digital",
-    "title": "Voluntariado Digital: Conecta y Transforma",
-    "organization": "Agape Hand · publicado en PROA",
-    "type": "voluntariado",
-    "url": "https://proa.pe/ong/agape-hand-1/voluntariado-digital-conecta-y-transforma",
-    "description": "Apoya una campaña social con comunicación digital, creación de contenidos y difusión. Participación virtual, voluntaria y no remunerada; certificado sujeto a cumplir compromisos.",
-    "skills": [
-      "Contenido",
-      "Marketing",
-      "Comunicación",
-      "Trabajo en equipo"
-    ],
-    "categories": [
-      "Marketing",
-      "Comunicaciones",
-      "Impacto social"
-    ],
-    "costLabel": "No remunerado",
-    "format": "100 % virtual",
-    "location": "Perú",
-    "deadline": null,
-    "availability": "verificar convocatoria",
-    "startsAt": "2026-11-15",
-    "endsAt": "2026-12-13",
-    "durationLabel": "15 nov. – 13 dic. 2026",
-    "language": "Español",
-    "statusNote": "Ficha con opción de postular al revisar. Confirmar cupos y fecha de cierre en la fuente.",
-    "evidence": "La ficha publicada por la organización indica fechas del programa 15/11/2026–13/12/2026, modalidad virtual y tareas de contenido y captación de donaciones. No se convirtió el contador relativo de cierre en una fecha.",
-    "sourceUrls": [
-      "https://proa.pe/ong/agape-hand-1/voluntariado-digital-conecta-y-transforma"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "intinauta-rrhh",
-    "title": "Voluntariado en Recursos Humanos",
-    "organization": "Intinauta · publicado en PROA",
-    "type": "voluntariado",
-    "url": "https://proa.pe/ong/intinauta/recursos-humanos-sector-aeroespacial",
-    "description": "Colabora en selección, inducción, registros y acompañamiento de voluntarios. Dirigido a estudiantes o egresados de Administración, Psicología, Ingeniería Industrial y carreras afines.",
-    "skills": [
-      "Recursos humanos",
-      "Organización",
-      "Comunicación",
-      "Trabajo en equipo"
-    ],
-    "categories": [
-      "Negocios",
-      "Ingeniería",
-      "Psicología",
-      "Impacto social"
-    ],
-    "costLabel": "Ad honorem · no remunerado",
-    "format": "100 % remoto",
-    "location": "Perú",
-    "deadline": null,
-    "availability": "verificar convocatoria",
-    "startsAt": "2026-11-01",
-    "endsAt": "2027-06-01",
-    "durationLabel": "4–6 h por semana · 6 meses iniciales",
-    "language": "Español",
-    "statusNote": "Ficha con opción de postular al revisar. Confirmar cupos y fecha de cierre en la fuente.",
-    "evidence": "La organización indica trabajo remoto desde Perú, sin experiencia previa, dedicación de cuatro a seis horas semanales y seis meses iniciales. La fecha de cierre solo se muestra como contador relativo.",
-    "sourceUrls": [
-      "https://proa.pe/ong/intinauta/recursos-humanos-sector-aeroespacial"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "unv-online",
-    "title": "Programa de voluntariado en línea de UNV",
-    "organization": "Voluntarios de las Naciones Unidas",
-    "type": "voluntariado",
-    "url": "https://www.unv.org/become-online-volunteer",
-    "description": "Explora asignaciones remotas de organizaciones que buscan apoyo. Requiere tener al menos 18 años; cada asignación define sus requisitos y selección. No implica remuneración.",
-    "skills": [
-      "Comunicación",
-      "Investigación",
-      "Diseño",
-      "Trabajo en equipo"
-    ],
-    "categories": [
-      "Impacto social",
-      "Comunicaciones",
-      "Tecnología",
-      "Empleabilidad"
-    ],
-    "costLabel": "No remunerado",
-    "format": "Virtual",
-    "location": "Internacional · desde Perú",
-    "deadline": null,
-    "availability": "verificar convocatoria",
-    "durationLabel": "Según asignación",
-    "language": "Según asignación",
-    "statusNote": "Programa permanente con asignaciones por convocatoria; esta ficha no representa una vacante concreta.",
-    "evidence": "UNV confirma acceso desde cualquier país, edad mínima de 18 años y postulaciones mediante su plataforma UVP. Las asignaciones tienen requisitos propios y no ofrecen compensación económica.",
-    "sourceUrls": [
-      "https://www.unv.org/become-online-volunteer"
-    ],
-    "lastVerified": "2026-11-06"
-  },
-  {
-    "id": "mckinsey-forward",
-    "title": "Forward: habilidades para el trabajo",
-    "organization": "McKinsey.org",
-    "type": "programa",
-    "url": "https://www.mckinsey.org/our-programs/forward/languages/spanish",
-    "description": "Programa de habilidades profesionales: resolución de problemas, comunicación, colaboración y herramientas digitales. La página invita a registrar interés para próximas convocatorias.",
-    "skills": [
-      "Resolución de problemas",
-      "Comunicación",
-      "Trabajo en equipo",
-      "Adaptabilidad"
-    ],
-    "categories": [
-      "Empleabilidad",
-      "Negocios",
-      "Ingeniería",
-      "Tecnología"
-    ],
-    "costLabel": "Gratuito",
-    "format": "Virtual · por cohortes",
-    "location": "Países habilitados por el programa",
-    "deadline": null,
-    "availability": "verificar convocatoria",
-    "durationLabel": "10 semanas · aprox. 2 h semanales",
-    "language": "Contenido en español; programa principalmente en inglés",
-    "statusNote": "No se confirma convocatoria abierta. Registrar interés y comprobar elegibilidad del país.",
-    "evidence": "La versión oficial en español informa diez semanas gratuitas y requisitos de experiencia; muestra un formulario de interés para cuando reabran convocatorias, no una inscripción abierta verificada.",
-    "sourceUrls": [
-      "https://www.mckinsey.org/our-programs/forward/languages/spanish"
-    ],
-    "lastVerified": "2026-11-06"
-  }
+ {
+  "id": "microsoft-powerbi",
+  "title": "Introducción al análisis de datos con Power BI",
+  "organization": "Microsoft Learn",
+  "type": "curso",
+  "url": "https://learn.microsoft.com/es-es/training/paths/data-analytics-microsoft/",
+  "description": "Explora el trabajo de un analista y aprende a crear informes y paneles con Power BI. Ruta de cuatro módulos sin requisitos previos.",
+  "skills": [
+   "Power BI",
+   "Análisis de datos",
+   "Visualización"
+  ],
+  "categories": [
+   "Datos",
+   "Negocios",
+   "Ingeniería"
+  ],
+  "costLabel": "Formación gratuita",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "durationLabel": "4 módulos",
+  "language": "Español",
+  "evidence": "La ruta oficial enumera cuatro módulos de análisis, Power BI, Fabric y Copilot; indica que no hay requisitos previos.",
+  "sourceUrls": [
+   "https://learn.microsoft.com/es-es/training/paths/data-analytics-microsoft/",
+   "https://learn.microsoft.com/es-es/training/support/faq"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "microsoft-sql",
+  "title": "Consulta y modificación de datos con SQL",
+  "organization": "Microsoft Learn",
+  "type": "curso",
+  "url": "https://learn.microsoft.com/es-es/training/paths/get-started-querying-with-transact-sql/",
+  "description": "Practica consultas, filtros, combinaciones de tablas y agrupaciones con Transact-SQL. Requiere familiaridad con tablas, por ejemplo en hojas de cálculo.",
+  "skills": [
+   "SQL",
+   "Bases de datos",
+   "Análisis de datos"
+  ],
+  "categories": [
+   "Datos",
+   "Tecnología",
+   "Ingeniería"
+  ],
+  "costLabel": "Formación gratuita",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "durationLabel": "6 módulos",
+  "language": "Español",
+  "evidence": "La ficha de Microsoft clasifica la ruta como principiante y presenta seis módulos sobre SELECT, filtros, JOIN, subconsultas y agrupaciones.",
+  "sourceUrls": [
+   "https://learn.microsoft.com/es-es/training/paths/get-started-querying-with-transact-sql/"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "python-essentials",
+  "title": "Python Essentials 1",
+  "organization": "Python Institute · OpenEDG",
+  "type": "curso",
+  "url": "https://pythoninstitute.org/python-essentials-1",
+  "description": "Aprende Python desde cero y construye tus primeros programas. El curso prepara para PCEP; el examen de certificación es independiente.",
+  "skills": [
+   "Python",
+   "Programación",
+   "Pensamiento analítico"
+  ],
+  "categories": [
+   "Tecnología",
+   "Datos",
+   "Ingeniería"
+  ],
+  "costLabel": "Curso gratuito",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "durationLabel": "6–8 semanas sugeridas",
+  "language": "Español disponible",
+  "evidence": "El proveedor identifica el curso como gratuito, de nivel inicial, disponible en español y sin conocimientos previos de programación.",
+  "sourceUrls": [
+   "https://pythoninstitute.org/python-essentials-1"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "cisco-cybersecurity",
+  "title": "Introducción a la ciberseguridad",
+  "organization": "Cisco Networking Academy",
+  "type": "curso",
+  "url": "https://www.netacad.com/courses/introduction-to-cybersecurity",
+  "description": "Conoce amenazas digitales, privacidad y fundamentos de protección de información. Un punto de entrada para explorar la ciberseguridad.",
+  "skills": [
+   "Ciberseguridad",
+   "Privacidad",
+   "Seguridad digital"
+  ],
+  "categories": [
+   "Tecnología",
+   "Ingeniería"
+  ],
+  "costLabel": "Gratuito",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "durationLabel": "6 horas",
+  "language": "Español disponible",
+  "evidence": "Cisco incluye el curso en su oferta gratuita y autodirigida, con nivel principiante y duración de seis horas.",
+  "sourceUrls": [
+   "https://www.netacad.com/courses/introduction-to-cybersecurity",
+   "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "santander-excel",
+  "title": "Excel: de básico a intermedio",
+  "organization": "Santander Open Academy",
+  "type": "curso",
+  "url": "https://app.santanderopenacademy.com/es/course/excel",
+  "description": "Aprende fórmulas, funciones y tablas dinámicas para organizar y analizar datos. Incluye certificado de finalización y admite participantes de cualquier país mayores de 16 años.",
+  "skills": [
+   "Excel",
+   "Análisis de datos",
+   "Organización"
+  ],
+  "categories": [
+   "Negocios",
+   "Datos",
+   "Finanzas",
+   "Ingeniería"
+  ],
+  "costLabel": "Gratuito · certificado incluido",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": "2026-12-31",
+  "availability": "verificar convocatoria",
+  "durationLabel": "8 horas",
+  "language": "Español",
+  "evidence": "La página oficial del mismo curso en portugués confirma disponibilidad hasta el 31/12/2026, ocho horas, español entre los idiomas y acceso gratuito desde cualquier país.",
+  "sourceUrls": [
+   "https://www.santanderopenacademy.com/pt_br/courses/excel.html/index.f",
+   "https://app.santanderopenacademy.com/es/course/excel"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "hubspot-inbound",
+  "title": "Certificación de inbound marketing",
+  "organization": "HubSpot Academy",
+  "type": "curso",
+  "url": "https://academy.hubspot.com/es/courses/inbound-marketing",
+  "description": "Diseña contenidos y experiencias para atraer clientes, nutrir oportunidades comerciales y medir campañas. Incluye formación en automatización e IA aplicada al marketing.",
+  "skills": [
+   "Marketing",
+   "Contenido",
+   "Comunicación",
+   "Analítica"
+  ],
+  "categories": [
+   "Marketing",
+   "Negocios",
+   "Comunicaciones"
+  ],
+  "costLabel": "Gratuito · certificación incluida",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "durationLabel": "5 horas",
+  "language": "Español",
+  "evidence": "La ficha oficial señala curso con certificación gratuita, nueve lecciones, siete cuestionarios y duración de cinco horas y dos minutos.",
+  "sourceUrls": [
+   "https://academy.hubspot.com/es/courses/inbound-marketing"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "hubspot-social",
+  "title": "Estrategia de redes sociales",
+  "organization": "HubSpot Academy",
+  "type": "curso",
+  "url": "https://academy.hubspot.com/es/courses/social-media",
+  "description": "Aprende a planificar contenido, escuchar a una comunidad y medir resultados en redes sociales. Útil para iniciar un proyecto de comunicación digital.",
+  "skills": [
+   "Redes sociales",
+   "Contenido",
+   "Marketing",
+   "Analítica"
+  ],
+  "categories": [
+   "Marketing",
+   "Comunicaciones",
+   "Negocios"
+  ],
+  "costLabel": "Gratuito · certificación incluida",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "durationLabel": "5 h 45 min",
+  "language": "Español",
+  "evidence": "La página oficial muestra certificación gratuita, diez lecciones y contenidos de estrategia, publicidad, escucha social y retorno de inversión.",
+  "sourceUrls": [
+   "https://academy.hubspot.com/es/courses/social-media"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "hp-networking",
+  "title": "Redes profesionales para crecer",
+  "organization": "HP LIFE · Fundación HP",
+  "type": "curso",
+  "url": "https://www.life-global.org/es/course/438-redes-profesionales-para-el-crecimiento-profesional",
+  "description": "Desarrolla habilidades para iniciar relaciones profesionales, descubrir oportunidades y construir una red de contactos con propósito.",
+  "skills": [
+   "Networking",
+   "Comunicación",
+   "Desarrollo profesional"
+  ],
+  "categories": [
+   "Empleabilidad",
+   "Negocios",
+   "Comunicaciones"
+  ],
+  "costLabel": "Gratuito · certificado de finalización",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "durationLabel": "A tu ritmo",
+  "language": "Español",
+  "evidence": "El catálogo oficial enlaza esta ficha y describe el desarrollo de contactos y relaciones. HP LIFE declara formación y certificados de finalización gratuitos.",
+  "sourceUrls": [
+   "https://www.life-global.org/es/allcourses",
+   "https://www.life-global.org/es"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "hp-cv",
+  "title": "Currículum y entrevistas de trabajo",
+  "organization": "HP LIFE · Fundación HP",
+  "type": "curso",
+  "url": "https://www.life-global.org/es/course/363-redacci%C3%B3n-de-curr%C3%ADculums-y-entrevistas-de-trabajo",
+  "description": "Prepara tu currículum, carta de presentación y entrevistas para comunicar mejor tu experiencia y tus fortalezas.",
+  "skills": [
+   "CV",
+   "Entrevistas",
+   "Comunicación",
+   "Desarrollo profesional"
+  ],
+  "categories": [
+   "Empleabilidad",
+   "Negocios",
+   "Tecnología",
+   "Marketing"
+  ],
+  "costLabel": "Gratuito · certificado de finalización",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "durationLabel": "A tu ritmo",
+  "language": "Español",
+  "evidence": "El curso aparece en el catálogo oficial con un enlace específico. La página principal de HP LIFE confirma la gratuidad del programa y sus certificados.",
+  "sourceUrls": [
+   "https://www.life-global.org/es/allcourses",
+   "https://www.life-global.org/es"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "hp-agile",
+  "title": "Gestión de proyectos con Agile",
+  "organization": "HP LIFE · Fundación HP",
+  "type": "curso",
+  "url": "https://www.life-global.org/es/course/383-gesti%C3%B3n-de-proyectos-con-agile",
+  "description": "Explora Scrum y Kanban para organizar el trabajo, colaborar y responder a las necesidades de un proyecto.",
+  "skills": [
+   "Gestión de proyectos",
+   "Scrum",
+   "Kanban",
+   "Trabajo en equipo"
+  ],
+  "categories": [
+   "Tecnología",
+   "Negocios",
+   "Ingeniería"
+  ],
+  "costLabel": "Gratuito · certificado de finalización",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "durationLabel": "A tu ritmo",
+  "language": "Español",
+  "evidence": "El catálogo de HP LIFE incluye una ficha específica de gestión de proyectos con Agile y menciona Scrum y Kanban.",
+  "sourceUrls": [
+   "https://www.life-global.org/es/allcourses",
+   "https://www.life-global.org/es"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "agape-digital",
+  "title": "Voluntariado Digital: Conecta y Transforma",
+  "organization": "Agape Hand · publicado en PROA",
+  "type": "voluntariado",
+  "url": "https://proa.pe/ong/agape-hand-1/voluntariado-digital-conecta-y-transforma",
+  "description": "Apoya una campaña social con comunicación digital, creación de contenidos y difusión. Participación virtual, voluntaria y no remunerada; certificado sujeto a cumplir compromisos.",
+  "skills": [
+   "Contenido",
+   "Marketing",
+   "Comunicación",
+   "Trabajo en equipo"
+  ],
+  "categories": [
+   "Marketing",
+   "Comunicaciones",
+   "Impacto social"
+  ],
+  "costLabel": "No remunerado",
+  "format": "100 % virtual",
+  "location": "Perú",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "startsAt": "2026-11-15",
+  "endsAt": "2026-12-13",
+  "durationLabel": "15 nov. – 13 dic. 2026",
+  "language": "Español",
+  "statusNote": "Ficha con opción de postular al revisar. Confirmar cupos y fecha de cierre en la fuente.",
+  "evidence": "La ficha publicada por la organización indica fechas del programa 15/11/2026–13/12/2026, modalidad virtual y tareas de contenido y captación de donaciones. No se convirtió el contador relativo de cierre en una fecha.",
+  "sourceUrls": [
+   "https://proa.pe/ong/agape-hand-1/voluntariado-digital-conecta-y-transforma"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "intinauta-rrhh",
+  "title": "Voluntariado en Recursos Humanos",
+  "organization": "Intinauta · publicado en PROA",
+  "type": "voluntariado",
+  "url": "https://proa.pe/ong/intinauta/recursos-humanos-sector-aeroespacial",
+  "description": "Colabora en selección, inducción, registros y acompañamiento de voluntarios. Dirigido a estudiantes o egresados de Administración, Psicología, Ingeniería Industrial y carreras afines.",
+  "skills": [
+   "Recursos humanos",
+   "Organización",
+   "Comunicación",
+   "Trabajo en equipo"
+  ],
+  "categories": [
+   "Negocios",
+   "Ingeniería",
+   "Psicología",
+   "Impacto social"
+  ],
+  "costLabel": "Ad honorem · no remunerado",
+  "format": "100 % remoto",
+  "location": "Perú",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "startsAt": "2026-11-01",
+  "endsAt": "2027-06-01",
+  "durationLabel": "4–6 h por semana · 6 meses iniciales",
+  "language": "Español",
+  "statusNote": "Ficha con opción de postular al revisar. Confirmar cupos y fecha de cierre en la fuente.",
+  "evidence": "La organización indica trabajo remoto desde Perú, sin experiencia previa, dedicación de cuatro a seis horas semanales y seis meses iniciales. La fecha de cierre solo se muestra como contador relativo.",
+  "sourceUrls": [
+   "https://proa.pe/ong/intinauta/recursos-humanos-sector-aeroespacial"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "unv-online",
+  "title": "Programa de voluntariado en línea de UNV",
+  "organization": "Voluntarios de las Naciones Unidas",
+  "type": "voluntariado",
+  "url": "https://www.unv.org/become-online-volunteer",
+  "description": "Explora asignaciones remotas de organizaciones que buscan apoyo. Requiere tener al menos 18 años; cada asignación define sus requisitos y selección. No implica remuneración.",
+  "skills": [
+   "Comunicación",
+   "Investigación",
+   "Diseño",
+   "Trabajo en equipo"
+  ],
+  "categories": [
+   "Impacto social",
+   "Comunicaciones",
+   "Tecnología",
+   "Empleabilidad"
+  ],
+  "costLabel": "No remunerado",
+  "format": "Virtual",
+  "location": "Internacional · desde Perú",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "durationLabel": "Según asignación",
+  "language": "Según asignación",
+  "statusNote": "Programa permanente con asignaciones por convocatoria; esta ficha no representa una vacante concreta.",
+  "evidence": "UNV confirma acceso desde cualquier país, edad mínima de 18 años y postulaciones mediante su plataforma UVP. Las asignaciones tienen requisitos propios y no ofrecen compensación económica.",
+  "sourceUrls": [
+   "https://www.unv.org/become-online-volunteer"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "mckinsey-forward",
+  "title": "Forward: habilidades para el trabajo",
+  "organization": "McKinsey.org",
+  "type": "programa",
+  "url": "https://www.mckinsey.org/our-programs/forward/languages/spanish",
+  "description": "Programa de habilidades profesionales: resolución de problemas, comunicación, colaboración y herramientas digitales. La página invita a registrar interés para próximas convocatorias.",
+  "skills": [
+   "Resolución de problemas",
+   "Comunicación",
+   "Trabajo en equipo",
+   "Adaptabilidad"
+  ],
+  "categories": [
+   "Empleabilidad",
+   "Negocios",
+   "Ingeniería",
+   "Tecnología"
+  ],
+  "costLabel": "Gratuito",
+  "format": "Virtual · por cohortes",
+  "location": "Países habilitados por el programa",
+  "deadline": null,
+  "availability": "próxima convocatoria",
+  "durationLabel": "10 semanas · aprox. 2 h semanales",
+  "language": "Contenido en español; programa principalmente en inglés",
+  "statusNote": "No se confirma convocatoria abierta. Registrar interés y comprobar elegibilidad del país.",
+  "evidence": "La versión oficial en español informa diez semanas gratuitas y requisitos de experiencia; muestra un formulario de interés para cuando reabran convocatorias, no una inscripción abierta verificada.",
+  "sourceUrls": [
+   "https://www.mckinsey.org/our-programs/forward/languages/spanish"
+  ],
+  "lastVerified": "2026-11-06"
+ },
+ {
+  "id": "google-summer-of-code",
+  "title": "Google Summer of Code",
+  "organization": "Google",
+  "type": "programa",
+  "url": "https://summerofcode.withgoogle.com/",
+  "description": "Programa remoto en el que contribuyes a un proyecto de código abierto con la guía de mentores de organizaciones reales. Google entrega un estipendio a quienes aprueban las evaluaciones.",
+  "skills": [
+   "Programación",
+   "Código abierto",
+   "Git",
+   "Trabajo en equipo"
+  ],
+  "categories": [
+   "Tecnología",
+   "Software",
+   "Ingeniería",
+   "Programación"
+  ],
+  "costLabel": "Gratuito · con estipendio",
+  "format": "Virtual · con mentoría",
+  "location": "Remoto desde Perú",
+  "deadline": null,
+  "availability": "próxima convocatoria",
+  "durationLabel": "Proyectos de 90, 175 o 350 horas · de mayo a agosto",
+  "language": "Inglés",
+  "statusNote": "La edición 2026 recibió postulaciones del 16 al 31 de marzo. La de 2027 aún no se anuncia; revisa el sitio desde febrero.",
+  "evidence": "Las preguntas frecuentes oficiales piden tener 18 años o más y ser estudiante o principiante en código abierto; el programa es totalmente en línea y entrega un estipendio a quienes aprueban sus evaluaciones. El cronograma oficial 2026 fijó las postulaciones del 16 al 31 de marzo.",
+  "sourceUrls": [
+   "https://developers.google.com/open-source/gsoc/faq",
+   "https://developers.google.com/open-source/gsoc/timeline"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "aspire-leaders",
+  "title": "Aspire Leaders Program",
+  "organization": "Aspire Institute",
+  "type": "programa",
+  "url": "https://www.aspireleaders.org/program/the-aspire-leaders-program/",
+  "description": "Programa de liderazgo en línea con clases magistrales en vivo de profesores universitarios y conversaciones con mentores y una cohorte de jóvenes de todo el mundo.",
+  "skills": [
+   "Liderazgo",
+   "Comunicación",
+   "Trabajo en equipo",
+   "Inglés"
+  ],
+  "categories": [
+   "Liderazgo",
+   "Negocios",
+   "Impacto social",
+   "Empleabilidad"
+  ],
+  "costLabel": "Gratuito",
+  "format": "Virtual · en vivo por cohortes",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "próxima convocatoria",
+  "durationLabel": "9 semanas",
+  "language": "Inglés",
+  "statusNote": "Para jóvenes de 18 a 29 años de bajos ingresos o primera generación universitaria. Las cohortes 2026 ya terminaron; el sitio tiene un formulario de interés para 2027.",
+  "evidence": "La página oficial lo describe como un programa gratuito en línea con clases sincrónicas; pide tener 18 a 29 años, venir de un contexto de bajos ingresos o ser primera generación universitaria y estar estudiando o haber egresado. En 2026 listó cohortes de abril a junio y de julio a septiembre.",
+  "sourceUrls": [
+   "https://www.aspireleaders.org/program/the-aspire-leaders-program/"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "ccai-summer-school",
+  "title": "Climate Change AI Summer School",
+  "organization": "Climate Change AI",
+  "type": "programa",
+  "url": "https://www.climatechange.ai/events/summer_school",
+  "description": "Escuela de verano virtual sobre inteligencia artificial para la acción climática: clases en vivo y grabadas, y tutoriales prácticos en Python.",
+  "skills": [
+   "Inteligencia artificial",
+   "Python",
+   "Análisis de datos",
+   "Sostenibilidad"
+  ],
+  "categories": [
+   "Tecnología",
+   "Datos",
+   "Sostenibilidad",
+   "Ingeniería"
+  ],
+  "costLabel": "USD 10 para residentes en Perú · hay exoneraciones",
+  "format": "Virtual · clases en vivo y grabadas",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "próxima convocatoria",
+  "durationLabel": "5 semanas · julio a agosto en 2026",
+  "language": "Inglés, con interpretación en vivo al español",
+  "statusNote": "La edición 2026 fue del 20 de julio al 22 de agosto. Revisa la página para la próxima edición.",
+  "evidence": "La página oficial de 2026 indica clases en vivo y grabadas, tutoriales en Python, interpretación al español y una cuota de USD 10 para residentes fuera de economías de ingreso alto (USD 30 en economías de ingreso alto), con exoneraciones disponibles.",
+  "sourceUrls": [
+   "https://www.climatechange.ai/events/summer_school2026"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "qiskit-summer-school",
+  "title": "Qiskit Global Summer School",
+  "organization": "IBM Quantum",
+  "type": "programa",
+  "url": "https://www.ibm.com/quantum/blog/qiskit-summer-school-2026",
+  "description": "Escuela de verano virtual sobre computación cuántica con Qiskit: clases, laboratorios prácticos y sesiones de preguntas en vivo con especialistas de IBM.",
+  "skills": [
+   "Computación cuántica",
+   "Python",
+   "Programación"
+  ],
+  "categories": [
+   "Tecnología",
+   "Ingeniería",
+   "Ciencia",
+   "Programación"
+  ],
+  "costLabel": "Gratuito",
+  "format": "Virtual · con sesiones en vivo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "próxima convocatoria",
+  "durationLabel": "2 semanas · julio en 2026",
+  "language": "Inglés",
+  "statusNote": "La edición 2026 fue del 13 al 24 de julio y su registro ya cerró. IBM anuncia la siguiente en su blog de Quantum.",
+  "evidence": "IBM la presenta como un programa gratuito y virtual con clases, laboratorios y sesiones de preguntas en vivo; la edición 2026 fue del 13 al 24 de julio y el registro está cerrado.",
+  "sourceUrls": [
+   "https://www.ibm.com/quantum/blog/qiskit-summer-school-2026"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "mlh-global-hack-week",
+  "title": "Global Hack Week",
+  "organization": "Major League Hacking (MLH)",
+  "type": "evento",
+  "url": "https://ghw.mlh.com/",
+  "description": "Semanas de hackathon en línea con talleres en vivo y retos técnicos, de diseño y sociales. Hay ediciones temáticas durante el año: principiantes, nube, APIs, IA y agentes.",
+  "skills": [
+   "Programación",
+   "Inteligencia artificial",
+   "Trabajo en equipo",
+   "Prototipado"
+  ],
+  "categories": [
+   "Tecnología",
+   "Software",
+   "Ingeniería",
+   "Programación"
+  ],
+  "costLabel": "Gratuito",
+  "format": "Virtual · en vivo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "durationLabel": "1 semana por edición",
+  "language": "Inglés",
+  "statusNote": "Cada edición tiene su propio registro. Revisa el calendario para ver la próxima.",
+  "evidence": "El sitio oficial la describe como un evento 100 % gratuito y en línea para cualquier persona; en 2026 hubo ediciones de enero a agosto, cada una con registro propio.",
+  "sourceUrls": [
+   "https://ghw.mlh.com/"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "claude-academy",
+  "title": "Cursos de IA de Claude Academy",
+  "organization": "Anthropic",
+  "type": "curso",
+  "url": "https://academy.claude.com/",
+  "description": "Cursos gratuitos para aprender a trabajar con IA: AI Fluency (unas 4 horas), capacidades y límites de los modelos de lenguaje (3,5 horas) y trabajo en equipo con agentes.",
+  "skills": [
+   "Inteligencia artificial",
+   "Pensamiento crítico",
+   "Comunicación"
+  ],
+  "categories": [
+   "Tecnología",
+   "Inteligencia artificial",
+   "Empleabilidad",
+   "Negocios"
+  ],
+  "costLabel": "Gratuito",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "durationLabel": "De 45 minutos a 4 horas por curso",
+  "evidence": "La página oficial presenta los cursos como gratuitos y lista AI Fluency: Framework and foundations (14 lecciones, unas 4 h), AI capabilities and limitations (13 lecciones, unas 3,5 h) y Building effective human-agent teams.",
+  "sourceUrls": [
+   "https://academy.claude.com/"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "openai-academy",
+  "title": "Cursos y eventos de OpenAI Academy",
+  "organization": "OpenAI",
+  "type": "curso",
+  "url": "https://academy.openai.com/",
+  "description": "Cursos y eventos en vivo para usar IA en el trabajo, construir con IA y enseñar y aprender con IA.",
+  "skills": [
+   "Inteligencia artificial",
+   "Productividad",
+   "Comunicación"
+  ],
+  "categories": [
+   "Tecnología",
+   "Inteligencia artificial",
+   "Empleabilidad",
+   "Negocios"
+  ],
+  "costLabel": "Gratuito · requiere cuenta de ChatGPT",
+  "format": "Virtual · a tu ritmo y eventos en vivo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "statusNote": "Confirma el costo al inscribirte: el centro de ayuda describe los cursos como gratuitos, pero una de sus preguntas frecuentes lo contradice.",
+  "evidence": "El sitio oficial ofrece cuatro rutas (IA en el trabajo, construir con IA, liderar la adopción de IA y enseñar con IA) y eventos en vivo. El centro de ayuda describe cursos gratuitos para quienes tienen cuenta de ChatGPT.",
+  "sourceUrls": [
+   "https://academy.openai.com/",
+   "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "clubes-ciencia-peru",
+  "title": "Voluntariado en Clubes de Ciencia Perú",
+  "organization": "Clubes de Ciencia Perú",
+  "type": "voluntariado",
+  "url": "https://clubesdecienciaperu.org/",
+  "description": "Asociación que organiza clubes y bootcamps de ciencia para escolares. Convoca voluntarios preprofesionales en gestión e instructores para sus bootcamps STEM.",
+  "skills": [
+   "Comunicación",
+   "Gestión de proyectos",
+   "Liderazgo",
+   "Enseñanza"
+  ],
+  "categories": [
+   "Impacto social",
+   "Ciencia",
+   "Educación",
+   "Voluntariado"
+  ],
+  "costLabel": "No remunerado",
+  "format": "Según la convocatoria",
+  "location": "Perú",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "statusNote": "En febrero de 2026 convocó instructores para su STEM Bootcamp. La convocatoria de voluntarios en gestión de 2025 fue de enero a abril.",
+  "evidence": "El sitio oficial muestra la convocatoria «Call for 2026's STEM Bootcamp Instructor» (8 de febrero de 2026) y una convocatoria de voluntarios preprofesionales en gestión de enero de 2025.",
+  "sourceUrls": [
+   "https://clubesdecienciaperu.org/"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "bcp-practicas",
+  "title": "Programa de prácticas del BCP",
+  "organization": "Banco de Crédito del Perú (BCP)",
+  "type": "práctica",
+  "url": "https://www.viabcp.com/blog-bcp/mejor-empresa-practicas-profesionales",
+  "description": "Prácticas preprofesionales con convocatorias periódicas para estudiantes universitarios. Para egresados existe el programa Talento Joven.",
+  "skills": [
+   "Excel",
+   "Análisis de datos",
+   "Comunicación",
+   "Trabajo en equipo"
+  ],
+  "categories": [
+   "Negocios",
+   "Finanzas",
+   "Datos",
+   "Tecnología",
+   "Empleabilidad"
+  ],
+  "costLabel": "Sin costo para postular",
+  "format": "Según el puesto",
+  "location": "Perú",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "statusNote": "Según el BCP, las prácticas preprofesionales son para estudiantes desde 7.º ciclo.",
+  "evidence": "El blog oficial del BCP describe convocatorias regulares de prácticas preprofesionales desde 7.º ciclo y el programa Talento Joven para egresados. La página no se pudo abrir directamente; el contenido se confirmó mediante el buscador.",
+  "sourceUrls": [
+   "https://www.viabcp.com/blog-bcp/mejor-empresa-practicas-profesionales"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "ieee-unmsm",
+  "title": "Eventos de la Rama Estudiantil IEEE UNMSM",
+  "organization": "Rama Estudiantil IEEE UNMSM",
+  "type": "evento",
+  "url": "https://edu.ieee.org/pe-unmsm/",
+  "description": "Rama estudiantil con capítulos técnicos de robótica, computación, energía, comunicaciones, ingeniería biomédica y más. Organiza charlas, talleres y competencias, como el torneo de robótica DECANATRON.",
+  "skills": [
+   "Robótica",
+   "Programación",
+   "Trabajo en equipo",
+   "Comunicación"
+  ],
+  "categories": [
+   "Tecnología",
+   "Ingeniería",
+   "Ciencia"
+  ],
+  "costLabel": "Según el evento",
+  "format": "Presencial · Lima",
+  "location": "Lima",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "statusNote": "Revisa su sitio y redes para ver los próximos eventos y si están abiertos a estudiantes de otras universidades.",
+  "evidence": "Según una nota de ProActivo, la rama tiene ocho capítulos técnicos (EMBS, PES, RAS, COMSOC, CS, IAS, AESS y TEMS) y un grupo WIE, y su capítulo de robótica anunció el torneo DECANATRON.",
+  "sourceUrls": [
+   "https://edu.ieee.org/pe-unmsm/",
+   "https://proactivo.com.pe/unmsm-la-robotica-se-consolida-como-disciplina-y-se-anuncia-torneo-en-octubre/"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "ieee-intercon",
+  "title": "INTERCON: congreso IEEE de ingeniería",
+  "organization": "IEEE Sección Perú",
+  "type": "evento",
+  "url": "https://www.intercon.org.pe/",
+  "description": "Congreso internacional anual de ingeniería eléctrica, electrónica y computación del IEEE en Perú: conferencias, talleres, concursos y certificado de participación.",
+  "skills": [
+   "Ingeniería",
+   "Investigación",
+   "Networking",
+   "Comunicación"
+  ],
+  "categories": [
+   "Tecnología",
+   "Ingeniería",
+   "Ciencia"
+  ],
+  "costLabel": "Estudiantes desde S/ 230 en 2026",
+  "format": "Presencial",
+  "location": "Sede rotativa en Perú",
+  "deadline": null,
+  "availability": "próxima convocatoria",
+  "durationLabel": "3 días",
+  "language": "Español e inglés",
+  "statusNote": "La edición 2026 fue del 12 al 14 de agosto en la UPAO, Trujillo. Estudiantes: S/ 280 (S/ 230 con membresía IEEE) en preventa.",
+  "evidence": "El sitio oficial de INTERCON 2026 indica fechas, sede en la UPAO (Trujillo) y tarifas para estudiantes; la inscripción incluye talleres, conferencias, concursos y certificado.",
+  "sourceUrls": [
+   "https://www.intercon.org.pe/"
+  ],
+  "lastVerified": "2026-11-07"
+ }
 ]
