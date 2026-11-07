@@ -2,7 +2,7 @@ export type Opportunity = {
  id: string; title: string; organization: string; type: string; url: string; description: string;
  skills: string[]; categories: string[]; costLabel: string; format: string; location: string;
  deadline: string | null; availability: string; lastVerified: string; duration?: string;
- durationLabel?: string; language?: string; statusNote?: string; endsAt?: string; evidence?: string; own?: boolean; status?: string; linkCheck?: {code:number; checkedAt:string};
+ durationLabel?: string; dateLabel?: string; language?: string; statusNote?: string; endsAt?: string; evidence?: string; own?: boolean; status?: string; linkCheck?: {code:number; checkedAt:string};
 };
 export type Profile = {name:string; career:string; university:string; cycle:number; target:string; skills:string[]; hours:number; bio:string};
 export type Mentor = {id:string;name:string;role:string;organization:string;area:string;bio:string;topics:string[];demo:boolean;own?:boolean;career?:string;cycle?:number};

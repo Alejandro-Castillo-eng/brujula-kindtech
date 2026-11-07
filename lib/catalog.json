@@ -477,7 +477,8 @@
    "https://developers.google.com/open-source/gsoc/faq",
    "https://developers.google.com/open-source/gsoc/timeline"
   ],
-  "lastVerified": "2026-11-07"
+  "lastVerified": "2026-11-07",
+  "dateLabel": "Postulación 2026: 16–31 mar"
  },
  {
   "id": "aspire-leaders",
@@ -510,7 +511,8 @@
   "sourceUrls": [
    "https://www.aspireleaders.org/program/the-aspire-leaders-program/"
   ],
-  "lastVerified": "2026-11-07"
+  "lastVerified": "2026-11-07",
+  "dateLabel": "Cohortes 2026: abr–jun y jul–sep"
  },
  {
   "id": "ccai-summer-school",
@@ -543,7 +545,8 @@
   "sourceUrls": [
    "https://www.climatechange.ai/events/summer_school2026"
   ],
-  "lastVerified": "2026-11-07"
+  "lastVerified": "2026-11-07",
+  "dateLabel": "Edición 2026: 20 jul–22 ago"
  },
  {
   "id": "qiskit-summer-school",
@@ -575,7 +578,8 @@
   "sourceUrls": [
    "https://www.ibm.com/quantum/blog/qiskit-summer-school-2026"
   ],
-  "lastVerified": "2026-11-07"
+  "lastVerified": "2026-11-07",
+  "dateLabel": "Edición 2026: 13–24 jul"
  },
  {
   "id": "mlh-global-hack-week",
@@ -763,7 +767,8 @@
   "sourceUrls": [
    "https://www.intercon.org.pe/"
   ],
-  "lastVerified": "2026-11-07"
+  "lastVerified": "2026-11-07",
+  "dateLabel": "Edición 2026: 12–14 ago"
  },
  {
   "id": "google-skills-genai",
@@ -860,6 +865,297 @@
   "sourceUrls": [
    "https://vtq.vt.edu/outreach/Quantum-Information-Science-and-Engineering-High-School-level-Summer-School.html",
    "https://www.bnl.gov/quantumcenter/student-opportunities.php"
+  ],
+  "lastVerified": "2026-11-07",
+  "dateLabel": "Edición 2026: 27–30 jul"
+ },
+ {
+  "id": "gdg-lima",
+  "title": "Eventos de GDG Lima",
+  "organization": "Google Developer Groups · GDG Lima",
+  "type": "evento",
+  "url": "https://gdg.community.dev/gdg-lima/",
+  "description": "Comunidad de Google Developer Groups con charlas, talleres y el DevFest anual sobre IA, nube, web y móvil, con sedes como la Universidad de San Martín de Porres.",
+  "skills": [
+   "Inteligencia artificial",
+   "Nube (Google Cloud)",
+   "Programación",
+   "Networking"
+  ],
+  "categories": [
+   "Tecnología",
+   "Programación",
+   "Nube",
+   "Inteligencia artificial",
+   "Comunidad"
+  ],
+  "costLabel": "Mayormente gratuito · revisa cada evento",
+  "format": "Presencial · Lima",
+  "location": "Lima",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "statusNote": "Próximo: DevFest Lima 2026 (13 y 14 de noviembre).",
+  "evidence": "La página oficial del capítulo en gdg.community.dev lo ubica en Perú, menciona eventos con la Universidad de San Martín de Porres y anuncia DevFest Lima 2026.",
+  "sourceUrls": [
+   "https://gdg.community.dev/gdg-lima/"
+  ],
+  "lastVerified": "2026-11-07",
+  "dateLabel": "DevFest: 13 y 14 nov 2026"
+ },
+ {
+  "id": "gdg-open",
+  "title": "Eventos de GDG Open",
+  "organization": "Google Developer Groups · GDG Open",
+  "type": "evento",
+  "url": "https://gdg.community.dev/gdg-open/",
+  "description": "Comunidad de Google Developer Groups con charlas, talleres y el DevFest anual sobre IA, nube, web y móvil, con sedes como la Universidad Nacional Mayor de San Marcos.",
+  "skills": [
+   "Inteligencia artificial",
+   "Nube (Google Cloud)",
+   "Programación",
+   "Networking"
+  ],
+  "categories": [
+   "Tecnología",
+   "Programación",
+   "Nube",
+   "Inteligencia artificial",
+   "Comunidad"
+  ],
+  "costLabel": "Mayormente gratuito · revisa cada evento",
+  "format": "Presencial · Lima",
+  "location": "Lima",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "statusNote": "Próximo: DevFest Open Lima 2026.",
+  "evidence": "La página oficial del capítulo en gdg.community.dev lo ubica en Perú, menciona eventos con la Universidad Nacional Mayor de San Marcos y anuncia DevFest Open Lima 2026.",
+  "sourceUrls": [
+   "https://gdg.community.dev/gdg-open/"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "gdg-cloud-lima",
+  "title": "Eventos de GDG Cloud Lima",
+  "organization": "Google Developer Groups · GDG Cloud Lima",
+  "type": "evento",
+  "url": "https://gdg.community.dev/gdg-cloud-lima/",
+  "description": "Comunidad de Google Developer Groups con charlas, talleres y el DevFest anual sobre IA, nube, web y móvil, con sedes como la Universidad Peruana de Ciencias Aplicadas.",
+  "skills": [
+   "Inteligencia artificial",
+   "Nube (Google Cloud)",
+   "Programación",
+   "Networking"
+  ],
+  "categories": [
+   "Tecnología",
+   "Programación",
+   "Nube",
+   "Inteligencia artificial",
+   "Comunidad"
+  ],
+  "costLabel": "Mayormente gratuito · revisa cada evento",
+  "format": "Presencial · Lima",
+  "location": "Lima",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "statusNote": "Próximo: DevFest Open Lima 2026.",
+  "evidence": "La página oficial del capítulo en gdg.community.dev lo ubica en Perú, menciona eventos con la Universidad Peruana de Ciencias Aplicadas y anuncia DevFest Open Lima 2026.",
+  "sourceUrls": [
+   "https://gdg.community.dev/gdg-cloud-lima/"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "gdg-arequipa",
+  "title": "Eventos de GDG Arequipa",
+  "organization": "Google Developer Groups · GDG Arequipa",
+  "type": "evento",
+  "url": "https://gdg.community.dev/gdg-arequipa/",
+  "description": "Comunidad de Google Developer Groups con charlas, talleres y el DevFest anual sobre IA, nube, web y móvil.",
+  "skills": [
+   "Inteligencia artificial",
+   "Nube (Google Cloud)",
+   "Programación",
+   "Networking"
+  ],
+  "categories": [
+   "Tecnología",
+   "Programación",
+   "Nube",
+   "Inteligencia artificial",
+   "Comunidad"
+  ],
+  "costLabel": "Mayormente gratuito · revisa cada evento",
+  "format": "Presencial · Arequipa",
+  "location": "Arequipa",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "statusNote": "Próximo: DevFest Arequipa 2026.",
+  "evidence": "La página oficial del capítulo en gdg.community.dev lo ubica en Perú y anuncia DevFest Arequipa 2026.",
+  "sourceUrls": [
+   "https://gdg.community.dev/gdg-arequipa/"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "gdg-piura",
+  "title": "Eventos de GDG Piura",
+  "organization": "Google Developer Groups · GDG Piura",
+  "type": "evento",
+  "url": "https://gdg.community.dev/gdg-piura/",
+  "description": "Comunidad de Google Developer Groups con charlas, talleres y el DevFest anual sobre IA, nube, web y móvil, con sedes como la Universidad de Piura.",
+  "skills": [
+   "Inteligencia artificial",
+   "Nube (Google Cloud)",
+   "Programación",
+   "Networking"
+  ],
+  "categories": [
+   "Tecnología",
+   "Programación",
+   "Nube",
+   "Inteligencia artificial",
+   "Comunidad"
+  ],
+  "costLabel": "Mayormente gratuito · revisa cada evento",
+  "format": "Presencial · Piura",
+  "location": "Piura",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "statusNote": "Próximo: DevFest Piura 2026.",
+  "evidence": "La página oficial del capítulo en gdg.community.dev lo ubica en Perú, menciona eventos con la Universidad de Piura y anuncia DevFest Piura 2026.",
+  "sourceUrls": [
+   "https://gdg.community.dev/gdg-piura/"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "gdg-tacna",
+  "title": "Eventos de GDG Tacna",
+  "organization": "Google Developer Groups · GDG Tacna",
+  "type": "evento",
+  "url": "https://gdg.community.dev/gdg-tacna/",
+  "description": "Comunidad de Google Developer Groups con charlas, talleres y el DevFest anual sobre IA, nube, web y móvil, con sedes como la Universidad Tecnológica del Perú.",
+  "skills": [
+   "Inteligencia artificial",
+   "Nube (Google Cloud)",
+   "Programación",
+   "Networking"
+  ],
+  "categories": [
+   "Tecnología",
+   "Programación",
+   "Nube",
+   "Inteligencia artificial",
+   "Comunidad"
+  ],
+  "costLabel": "Mayormente gratuito · revisa cada evento",
+  "format": "Presencial · Tacna",
+  "location": "Tacna",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "statusNote": "Próximo: DevFest Tacna 2026 (21 de noviembre).",
+  "evidence": "La página oficial del capítulo en gdg.community.dev lo ubica en Perú, menciona eventos con la Universidad Tecnológica del Perú y anuncia DevFest Tacna 2026.",
+  "sourceUrls": [
+   "https://gdg.community.dev/gdg-tacna/"
+  ],
+  "lastVerified": "2026-11-07",
+  "dateLabel": "DevFest: 21 nov 2026"
+ },
+ {
+  "id": "gdg-cusco",
+  "title": "Eventos de GDG Cusco",
+  "organization": "Google Developer Groups · GDG Cusco",
+  "type": "evento",
+  "url": "https://gdg.community.dev/gdg-cusco/",
+  "description": "Comunidad de Google Developer Groups con charlas, talleres y el DevFest anual sobre IA, nube, web y móvil, con sedes como la Universidad Continental.",
+  "skills": [
+   "Inteligencia artificial",
+   "Nube (Google Cloud)",
+   "Programación",
+   "Networking"
+  ],
+  "categories": [
+   "Tecnología",
+   "Programación",
+   "Nube",
+   "Inteligencia artificial",
+   "Comunidad"
+  ],
+  "costLabel": "Mayormente gratuito · revisa cada evento",
+  "format": "Presencial · Cusco",
+  "location": "Cusco",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "statusNote": "Próximo: DevFest Cusco 2026.",
+  "evidence": "La página oficial del capítulo en gdg.community.dev lo ubica en Perú, menciona eventos con la Universidad Continental y anuncia DevFest Cusco 2026.",
+  "sourceUrls": [
+   "https://gdg.community.dev/gdg-cusco/"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "gdg-huancayo",
+  "title": "Eventos de GDG Huancayo",
+  "organization": "Google Developer Groups · GDG Huancayo",
+  "type": "evento",
+  "url": "https://gdg.community.dev/gdg-huancayo/",
+  "description": "Comunidad de Google Developer Groups con charlas, talleres y el DevFest anual sobre IA, nube, web y móvil, con sedes como la Universidad Continental.",
+  "skills": [
+   "Inteligencia artificial",
+   "Nube (Google Cloud)",
+   "Programación",
+   "Networking"
+  ],
+  "categories": [
+   "Tecnología",
+   "Programación",
+   "Nube",
+   "Inteligencia artificial",
+   "Comunidad"
+  ],
+  "costLabel": "Mayormente gratuito · revisa cada evento",
+  "format": "Presencial · Huancayo",
+  "location": "Huancayo",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "statusNote": "Revisa su página para los próximos eventos.",
+  "evidence": "La página oficial del capítulo en gdg.community.dev lo ubica en Perú, menciona eventos con la Universidad Continental.",
+  "sourceUrls": [
+   "https://gdg.community.dev/gdg-huancayo/"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "gdg-ica",
+  "title": "Eventos de GDG Ica",
+  "organization": "Google Developer Groups · GDG Ica",
+  "type": "evento",
+  "url": "https://gdg.community.dev/gdg-ica/",
+  "description": "Comunidad de Google Developer Groups con charlas, talleres y el DevFest anual sobre IA, nube, web y móvil, con sedes como la Universidad Nacional San Luis Gonzaga.",
+  "skills": [
+   "Inteligencia artificial",
+   "Nube (Google Cloud)",
+   "Programación",
+   "Networking"
+  ],
+  "categories": [
+   "Tecnología",
+   "Programación",
+   "Nube",
+   "Inteligencia artificial",
+   "Comunidad"
+  ],
+  "costLabel": "Mayormente gratuito · revisa cada evento",
+  "format": "Presencial · Ica",
+  "location": "Ica",
+  "deadline": null,
+  "availability": "verificar convocatoria",
+  "statusNote": "Próximo: DevFest Ica 2026.",
+  "evidence": "La página oficial del capítulo en gdg.community.dev lo ubica en Perú, menciona eventos con la Universidad Nacional San Luis Gonzaga y anuncia DevFest Ica 2026.",
+  "sourceUrls": [
+   "https://gdg.community.dev/gdg-ica/"
   ],
   "lastVerified": "2026-11-07"
  }
