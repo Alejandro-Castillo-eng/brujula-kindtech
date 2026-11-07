@@ -47,7 +47,7 @@ export function Onboarding({ initialStep = 0, opportunities, busy, art, onSave, 
    <span className="ob-pill">TU FUTURO, A TU RITMO</span>
    <h1>Tu talento tiene un camino.</h1>
    <p className="ob-lead">Responde 3 preguntas rápidas y te mostramos por dónde empezar.</p>
-   <ul className="ob-facts"><li><Sparkles size={16} /> Menos de 1 minuto</li><li><Lock size={16} /> Sin cuenta: tus datos se quedan en este navegador</li></ul>
+   <ul className="ob-facts"><li><Sparkles size={16} /> Menos de 1 minuto</li><li><Lock size={16} /> Sin cuenta: tus datos se borran al cerrar la página</li></ul>
   </div>
   <div className="ob-footer">
    <button className="button full" onClick={() => setStep(1)}>Empezar <ArrowRight size={16} /></button>

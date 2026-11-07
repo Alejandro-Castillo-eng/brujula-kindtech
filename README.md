@@ -22,7 +22,7 @@ MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en esc
 
 Sitio estático: React + TypeScript compilado con Vite y publicado en GitHub Pages. No hay servidor, base de datos ni inicio de sesión.
 
-Todos los datos de cada persona (perfil, guardados, progreso, oportunidades propias, solicitudes y opiniones) se guardan **solo en su navegador** (`localStorage`). No se envían a ningún sitio. Si la persona borra los datos del navegador o cambia de dispositivo, empieza de cero; puede descargar una copia con «Exportar mis datos».
+**Cada visita empieza como un usuario nuevo.** Los datos (perfil, guardados, progreso, oportunidades propias, solicitudes y opiniones) viven solo en memoria mientras la página está abierta: no se envían a ningún sitio y se borran al recargar o cerrar. Durante la visita se puede descargar una copia con «Exportar mis datos». `lib/local-store.ts` acepta cualquier almacenamiento, así que volver a conservar los datos entre visitas solo requiere pasarle `localStorage` en `app/mobile-app.tsx`.
 
 | Archivo | Contenido |
 |---|---|
@@ -31,7 +31,7 @@ Todos los datos de cada persona (perfil, guardados, progreso, oportunidades prop
 | `app/onboarding.tsx` | Primer recorrido (bienvenida, 3 pasos y resumen) |
 | `app/forms.tsx` | Formularios |
 | `app/style.css` | Diseño |
-| `lib/local-store.ts` | Almacenamiento local, validación (Zod) y reglas de cada acción |
+| `lib/local-store.ts` | Almacenamiento de la sesión, validación (Zod) y reglas de cada acción |
 | `lib/logic.ts` | Filtros, vigencia, relevancia y rutas |
 | `lib/catalog.json` | Catálogo inicial con su evidencia y fuentes |
 | `.github/workflows/pages.yml` | Comprueba, compila y publica en la rama `gh-pages` |
@@ -63,7 +63,7 @@ Cada push a `main` comprueba y compila la app, y publica el resultado en la rama
 
 ## Límites de esta entrega
 
-Al no haber servidor, los datos no se comparten entre personas ni dispositivos. Los mentores son de ejemplo: las solicitudes no llegan a nadie, y las opiniones se quedan en el navegador de quien las escribe. Una comunidad real o recoger opiniones requerirá un backend o un servicio externo.
+Al no haber servidor, los datos no se comparten entre personas ni se conservan entre visitas. Los mentores son de ejemplo: las solicitudes no llegan a nadie, y las opiniones se pierden al cerrar la página. Una comunidad real o recoger opiniones requerirá un backend o un servicio externo.
 
 La IA generativa no está conectada. No se presenta el filtro por palabras como un modelo de IA. La propuesta y estimación están en `docs/RECOMENDACION_IA.md`; integrarla necesitaría un servidor que guarde la clave de API, porque no puede ponerse en un sitio público.
 
