@@ -60,8 +60,6 @@ span.ob-tag{padding:7px 12px;font-size:12px}
 .ob-pill{font-size:12px;font-weight:700;letter-spacing:1.4px;color:var(--orange-text);background:#fbe9df;border-radius:20px;padding:6px 11px}
 .ob-welcome h1{font-size:32px;margin-top:14px}
 .ob-welcome .ob-lead{max-width:320px}
-.ob-facts{list-style:none;padding:0;margin:16px 0 0;display:flex;flex-direction:column;gap:9px;font-size:13px;color:#726a63}
-.ob-facts li{display:flex;align-items:center;gap:7px;justify-content:center}
 .ob-done{width:50px;height:50px;border-radius:50%;background:#e5efe2;color:#456d44;display:flex;align-items:center;justify-content:center;margin-bottom:6px;animation:pop .35s ease-out}
 .ob-summary{background:white;border:1px solid var(--border);border-radius:18px;padding:18px;margin-top:16px;display:flex;flex-direction:column;gap:15px}
 .ob-summary-head{display:flex;align-items:center;gap:13px}
