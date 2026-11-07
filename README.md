@@ -1,8 +1,8 @@
-# Brújula · Tu próximo paso
+# cercanIA · Tu próximo paso
 
-MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en escritorio presenta un marco de teléfono. Nombre provisional. Es pública: no requiere cuenta, inicio de sesión ni instalar nada.
+MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en escritorio presenta un marco de teléfono. Es pública: no requiere cuenta, inicio de sesión ni instalar nada.
 
-**[Abrir Brújula](https://alejandro-castillo-eng.github.io/brujula-kindtech/)** · [Repositorio](https://github.com/Alejandro-Castillo-eng/brujula-kindtech)
+**[Abrir cercanIA](https://alejandro-castillo-eng.github.io/brujula-kindtech/)** · [Repositorio](https://github.com/Alejandro-Castillo-eng/brujula-kindtech)
 
 ![Vista móvil del MVP con un perfil de prueba](docs/brujula-movil.jpg)
 
@@ -13,7 +13,7 @@ MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en esc
 - Bienvenida de menos de un minuto la primera vez: tres pasos de un toque (sobre ti, área de interés, habilidades y tiempo) y un resumen con fortalezas, habilidades por reforzar y ritmo, que lleva a Explorar oportunidades. Se puede saltar con «Ahora no» o «Solo quiero explorar».
 - Carreras iniciales: la carrera se elige de una lista corta (`lib/careers.ts`) y define las áreas que se ofrecen, los conocimientos técnicos de «¿Qué ya sabes hacer?» (por ejemplo, Git y GitHub o programar con IA en Ingeniería de Sistemas; Figma o Illustrator en Diseño Gráfico) y el orden de las oportunidades recomendadas. Si la carrera aún no está cubierta, se dice con claridad y se ofrecen áreas que sirven en cualquier carrera.
 - Referentes (pestaña de la barra inferior, en lugar de «Mi ruta»): 5 trayectorias típicas de la carrera y, si hay universidad, sus egresados; cada una abre una búsqueda de perfiles en LinkedIn. No se muestran datos de personas concretas.
-- Asistente de Explorar («Pregúntale a Brújula»): responde preguntas en lenguaje natural («programas gratis de IA», «eventos en Lima») con oportunidades del catálogo. Interpreta tipo, tema, costo, modalidad, ciudad y certificado; si no hay coincidencias exactas, relaja condiciones y lo dice. Funciona con reglas en el navegador (`lib/assistant.ts`), sin enviar datos a ningún servicio; conectar un modelo de IA requiere un servidor que guarde la clave (ver `docs/RECOMENDACION_IA.md`).
+- Asistente de Explorar («Pregúntale a cercanIA»): responde preguntas en lenguaje natural («programas gratis de IA», «eventos en Lima») con oportunidades del catálogo. Interpreta tipo, tema, costo, modalidad, ciudad y certificado; si no hay coincidencias exactas, relaja condiciones y lo dice. Funciona con reglas en el navegador (`lib/assistant.ts`), sin enviar datos a ningún servicio; conectar un modelo de IA requiere un servidor que guarde la clave (ver `docs/RECOMENDACION_IA.md`).
 - Inicio, edición del perfil, objetivo y disponibilidad semanal.
 - Catálogo inicial de 43 oportunidades recopiladas de fuentes originales (cursos, programas en vivo, escuelas de verano, hackathons, voluntariados, eventos IEEE y capítulos GDG de Perú), con modalidad, costo, requisitos, enlace y fecha de revisión.
 - Búsqueda por palabras, tipo, gratuidad y modalidad. Reconoce expresiones sencillas como «cursos gratis virtuales de marketing» mediante reglas, sin IA.

@@ -1,4 +1,4 @@
-**Recomendación de IA para Brújula — 6 de noviembre de 2026**
+**Recomendación de IA para cercanIA — 6 de noviembre de 2026**
 
 Para el MVP acordado, la búsqueda y los filtros deben funcionar sobre un catálogo previamente curado, aunque no haya una API de IA conectada. La IA puede añadirse como una forma más cómoda de expresar la búsqueda: «quiero un curso gratis de Excel, virtual y en español». El servidor convierte esa intención en filtros y consulta los registros existentes.
 

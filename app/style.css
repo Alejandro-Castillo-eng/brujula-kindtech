@@ -222,3 +222,4 @@ span.ob-tag{padding:7px 12px;font-size:12px}
 .chat-bubble.them{align-self:flex-start;background:#f3f1ec;color:var(--ink);border-bottom-left-radius:4px}
 .chat-bubble small{display:block;font-size:11px;color:var(--muted);margin-top:4px;font-style:italic}
 .chat-empty{font-size:13px;color:var(--muted);text-align:center;margin:6px 0}
+.brand-ia{background:linear-gradient(90deg,#e96a42,#d9467a);-webkit-background-clip:text;background-clip:text;color:transparent}

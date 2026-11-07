@@ -1,11 +1,11 @@
-// Almacenamiento local de Brújula. Sustituye a la antigua API con servidor:
+// Almacenamiento local de cercanIA. Sustituye a la antigua API con servidor:
 // todos los datos del usuario viven en el navegador (localStorage) y nunca se
 // envían a ningún servidor. Así la app puede publicarse como sitio estático.
 import { z } from 'zod';
 import { safeUrl, AREAS, buildRoute, isLinkedInProfile } from './logic.ts';
 import type { Bootstrap, Mentor, MentorRequest, Opportunity, Profile } from './types';
 
-export const STORAGE_KEY = 'brujula:v1';
+export const STORAGE_KEY = 'cercania:v1';
 export const LOCAL_USER_ID = 'local';
 
 export type KeyValueStorage = { getItem(key: string): string | null; setItem(key: string, value: string): void; removeItem(key: string): void };
@@ -109,7 +109,7 @@ export function createStore(storage: KeyValueStorage, catalog: Opportunity[], de
     if (b.enabled === false) { state.mentor = null; break; }
     if (!state.profile) throw new StoreError('Completa primero tu perfil.');
     const details = mentorSchema.parse(b.mentor);
-    state.mentor = { ...details, name: state.profile.name, organization: state.profile.university || 'Comunidad Brújula', area: state.profile.target, career: state.profile.career, cycle: state.profile.cycle };
+    state.mentor = { ...details, name: state.profile.name, organization: state.profile.university || 'Comunidad cercanIA', area: state.profile.target, career: state.profile.career, cycle: state.profile.cycle };
     break;
    }
    case 'mentor-request': {
