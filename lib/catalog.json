@@ -1224,5 +1224,169 @@
    "https://databricks.com/training/catalog/generative-ai-fundamentals-accreditation-1811",
    "https://answers.databricks.com/certified-data-ai-start"
   ]
+ },
+ {
+  "type": "curso",
+  "organization": "Databricks Academy",
+  "costLabel": "Gratuito",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "lastVerified": "2026-11-07",
+  "statusNote": "Necesitas una cuenta gratuita en Databricks Academy. Los laboratorios guiados no están incluidos; puedes practicar con Databricks Free Edition.",
+  "id": "databricks-end-to-end",
+  "title": "Get Started with Databricks: End to End",
+  "url": "https://www.databricks.com/training/catalog/get-started-with-databricks-end-to-end-6273",
+  "description": "Introducción práctica completa a la plataforma: espacio de trabajo, Unity Catalog, notebooks con IA, SQL y dashboards, Genie y una introducción a machine learning con MLflow.",
+  "skills": [
+   "SQL",
+   "Análisis de datos",
+   "Python",
+   "Machine learning"
+  ],
+  "categories": [
+   "Datos",
+   "Tecnología",
+   "Nube",
+   "Inteligencia artificial"
+  ],
+  "durationLabel": "2 horas",
+  "language": "Inglés",
+  "evidence": "El catálogo oficial indica 2 horas, nivel de inicio y modalidad a tu ritmo con videos bajo demanda. Databricks indica que todos los cursos de Databricks Academy son gratuitos y a tu ritmo.",
+  "sourceUrls": [
+   "https://www.databricks.com/training/catalog/get-started-with-databricks-end-to-end-6273",
+   "https://answers.databricks.com/certified-data-ai-start"
+  ]
+ },
+ {
+  "type": "curso",
+  "organization": "Databricks Academy",
+  "costLabel": "Gratuito",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "lastVerified": "2026-11-07",
+  "statusNote": "Necesitas una cuenta gratuita en Databricks Academy. Los laboratorios guiados no están incluidos; puedes practicar con Databricks Free Edition.",
+  "id": "databricks-free-edition",
+  "title": "Get Started with Databricks Free Edition",
+  "url": "https://www.databricks.com/training/catalog/get-started-with-databricks-free-edition-4486",
+  "description": "Taller corto con dos notebooks guiados para conocer el espacio de trabajo, ejecutar Python y SQL, cargar datos y crear visualizaciones.",
+  "skills": [
+   "Python",
+   "SQL",
+   "Análisis de datos"
+  ],
+  "categories": [
+   "Datos",
+   "Tecnología",
+   "Programación"
+  ],
+  "durationLabel": "30 minutos",
+  "language": "Inglés",
+  "evidence": "El catálogo oficial indica 30 minutos, nivel de inicio, modalidad a tu ritmo y como requisitos una cuenta de Free Edition y nociones de SQL y Python. Databricks indica que todos los cursos de Databricks Academy son gratuitos y a tu ritmo.",
+  "sourceUrls": [
+   "https://www.databricks.com/training/catalog/get-started-with-databricks-free-edition-4486",
+   "https://answers.databricks.com/certified-data-ai-start"
+  ]
+ },
+ {
+  "type": "curso",
+  "organization": "Databricks Academy",
+  "costLabel": "Gratuito",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "lastVerified": "2026-11-07",
+  "statusNote": "Necesitas una cuenta gratuita en Databricks Academy. Los laboratorios guiados no están incluidos; puedes practicar con Databricks Free Edition.",
+  "id": "databricks-data-engineering",
+  "title": "Get Started with Databricks for Data Engineering",
+  "url": "https://www.databricks.com/es/training/catalog/get-started-with-databricks-for-data-engineering-spanish-3908",
+  "description": "Introducción a los componentes de ingeniería de datos de Databricks: Databricks SQL, pipelines declarativos de Lakeflow y Unity Catalog.",
+  "skills": [
+   "Ingeniería de datos",
+   "SQL",
+   "Bases de datos (SQL)"
+  ],
+  "categories": [
+   "Datos",
+   "Tecnología",
+   "Nube",
+   "Ingeniería"
+  ],
+  "durationLabel": "A tu ritmo",
+  "language": "Español",
+  "evidence": "El catálogo oficial lo lista a tu ritmo y tiene versión en español; pide nociones básicas de ingeniería de datos. Databricks indica que todos los cursos de Databricks Academy son gratuitos y a tu ritmo.",
+  "sourceUrls": [
+   "https://www.databricks.com/es/training/catalog/get-started-with-databricks-for-data-engineering-spanish-3908",
+   "https://answers.databricks.com/certified-data-ai-start"
+  ]
+ },
+ {
+  "type": "curso",
+  "organization": "Databricks Academy",
+  "costLabel": "Gratuito",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "lastVerified": "2026-11-07",
+  "statusNote": "Necesitas una cuenta gratuita en Databricks Academy. Los laboratorios guiados no están incluidos; puedes practicar con Databricks Free Edition.",
+  "id": "databricks-machine-learning",
+  "title": "Get Started with Databricks for Machine Learning",
+  "url": "https://www.databricks.com/training/catalog/get-started-with-databricks-for-machine-learning-2461",
+  "description": "Para quienes empiezan en machine learning: ingeniería de características en notebooks y seguimiento del ciclo de vida de modelos con MLflow.",
+  "skills": [
+   "Machine learning",
+   "Python",
+   "Inteligencia artificial"
+  ],
+  "categories": [
+   "Datos",
+   "Inteligencia artificial",
+   "Tecnología"
+  ],
+  "durationLabel": "4 horas",
+  "language": "Inglés",
+  "evidence": "El catálogo oficial indica 4 horas, conocimientos básicos de Python y demos que se pueden seguir con Free Edition. Databricks indica que todos los cursos de Databricks Academy son gratuitos y a tu ritmo.",
+  "sourceUrls": [
+   "https://www.databricks.com/training/catalog/get-started-with-databricks-for-machine-learning-2461",
+   "https://answers.databricks.com/certified-data-ai-start"
+  ]
+ },
+ {
+  "type": "curso",
+  "organization": "Databricks Academy",
+  "costLabel": "Gratuito",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "lastVerified": "2026-11-07",
+  "statusNote": "Necesitas una cuenta gratuita en Databricks Academy. Los laboratorios guiados no están incluidos; puedes practicar con Databricks Free Edition.",
+  "id": "databricks-sql-analytics",
+  "title": "Get Started with SQL Analytics and BI on Databricks",
+  "url": "https://www.databricks.com/training/catalog/get-started-with-sql-analytics-and-bi-on-databricks-3347",
+  "description": "Analítica de datos en Databricks: dashboards de AI/BI, exploración de datos en Unity Catalog, visualizaciones y consultas SQL generadas desde lenguaje natural.",
+  "skills": [
+   "SQL",
+   "Análisis de datos",
+   "Power BI",
+   "Visualización"
+  ],
+  "categories": [
+   "Datos",
+   "Negocios",
+   "Tecnología"
+  ],
+  "durationLabel": "A tu ritmo",
+  "language": "Inglés",
+  "evidence": "El catálogo oficial lo describe como una introducción a la analítica y el almacenamiento de datos con dashboards de AI/BI y Genie. Databricks indica que todos los cursos de Databricks Academy son gratuitos y a tu ritmo.",
+  "sourceUrls": [
+   "https://www.databricks.com/training/catalog/get-started-with-sql-analytics-and-bi-on-databricks-3347",
+   "https://answers.databricks.com/certified-data-ai-start"
+  ]
  }
 ]
