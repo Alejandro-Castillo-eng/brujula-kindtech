@@ -159,3 +159,4 @@ span.ob-tag{padding:7px 12px;font-size:12px}
 .company-icon.has-logo{background:#fff;border:1px solid var(--border);padding:6px;overflow:hidden}
 .company-icon.has-logo img{width:100%;height:100%;object-fit:contain;border-radius:4px}
 .active-filters{display:flex;align-items:center;flex-wrap:wrap;gap:7px}.clear-filters{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:600;color:var(--orange-text);padding:5px 4px}
+.linkedin-link{align-self:flex-start;margin-left:auto}.linkedin-link.is-example{cursor:default}.linkedin-link.is-example:hover{transform:none}
