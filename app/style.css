@@ -127,3 +127,5 @@ span.ob-tag{padding:7px 12px;font-size:12px}
 .company-name{color:var(--ink)}
 /* Fondo con un leve degradado cálido arriba, como el cielo de Luma */
 .page{background:linear-gradient(180deg,#fcefe6 0,rgba(251,250,247,0) 240px)}
+/* El degradado cálido empieza en la cabecera y continúa sin corte en la página */
+.app-header{background:linear-gradient(180deg,#fae5d8,#fcefe6);border-bottom:0}
