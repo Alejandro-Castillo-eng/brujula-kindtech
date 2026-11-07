@@ -23,7 +23,7 @@ export function Onboarding({ initialStep = 0, busy, art, onSave, onSkip, onFinis
  art: ReactNode;
  onSave: (p: Profile) => Promise<boolean>;
  onSkip: () => void;
- onFinish: (to: 'route' | 'explore') => void;
+ onFinish: (to: 'route' | 'explore' | 'referents') => void;
 }) {
  const [step, setStep] = useState(initialStep);
  const [value, setValue] = useState<Profile>({ ...DEFAULT_PROFILE, career: '', target: '' });
@@ -68,7 +68,7 @@ export function Onboarding({ initialStep = 0, busy, art, onSave, onSkip, onFinis
    </div>
    <div className="ob-footer">
     <button className="button full" onClick={() => onFinish('explore')}>Explorar oportunidades <ArrowRight size={16} /></button>
-    <button className="ob-link" onClick={() => onFinish('route')}>Ver mi ruta</button>
+    <button className="ob-link" onClick={() => onFinish('referents')}>Ver referentes</button>
    </div>
   </div>;
  }
