@@ -130,3 +130,22 @@ span.ob-tag{padding:7px 12px;font-size:12px}
 /* El degradado cálido empieza en la cabecera y continúa sin corte en la página */
 .app-header{background:linear-gradient(180deg,#fae5d8,#fcefe6);border-bottom:0}
 .card-date{font-weight:600;color:var(--ink)}.card-status{color:var(--muted)}
+/* Comunidad con más vida */
+.community-note{background:linear-gradient(120deg,#e96a42,#d9467a);color:#fff;box-shadow:0 10px 24px #d9467a2b}
+.community-note>svg{background:#ffffff2e;border-radius:12px;padding:8px;width:40px;height:40px;flex-shrink:0}
+.community-note p{color:#fff;font-weight:500}
+.community-note .text-button{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.segmented>button.active{background:#fff;color:var(--orange-text);font-weight:700;box-shadow:0 3px 10px #b94f2a1f}
+.mentor-card{position:relative;overflow:hidden;animation:card-rise .45s cubic-bezier(.2,.8,.3,1) both}
+.mentor-card::before{content:'';position:absolute;inset:0 0 auto;height:5px;background:var(--hue-fg);opacity:.85}
+.mentor-avatar[class*=hue-]{background:var(--hue-bg);color:var(--hue-fg);font-weight:800;box-shadow:0 0 0 3px #fff,0 0 0 5px var(--hue-bg)}
+.connect-button{display:inline-flex;align-items:center;gap:6px;background:var(--orange);color:#fff;font-weight:700;font-size:13px;border-radius:20px;padding:8px 15px;transition:transform .15s,background .15s}
+.connect-button:hover{background:var(--orange-dark);transform:translateY(-1px)}
+@keyframes card-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+/* Al seleccionar Comunidad, las personas del ícono saltan una tras otra */
+.bottom-nav button[data-tab=community].active svg{animation:people-pop .5s ease-out}
+.bottom-nav button[data-tab=community].active svg>*{transform-box:fill-box;transform-origin:center bottom;animation:person-hop .7s ease-out both}
+.bottom-nav button[data-tab=community].active svg>:nth-child(2),.bottom-nav button[data-tab=community].active svg>:nth-child(3){animation-delay:.12s}
+@keyframes people-pop{0%{transform:scale(.8)}60%{transform:scale(1.15)}100%{transform:scale(1)}}
+@keyframes person-hop{0%,100%{transform:translateY(0)}35%{transform:translateY(-4px)}60%{transform:translateY(0)}75%{transform:translateY(-1.5px)}}
+@media (prefers-reduced-motion:reduce){.mentor-card,.bottom-nav button[data-tab=community].active svg,.bottom-nav button[data-tab=community].active svg>*{animation:none}}
