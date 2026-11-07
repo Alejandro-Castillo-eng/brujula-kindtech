@@ -20,7 +20,7 @@ export function relevance(o:Opportunity,p:Profile|null) {
 export function statusOf(o:Opportunity,now=new Date()) {
  if(o.deadline && /^\d{4}-\d{2}-\d{2}$/.test(o.deadline) && new Date(o.deadline+'T23:59:59-05:00').getTime()<now.getTime()) return 'Vencida';
  if(o.linkCheck && (o.linkCheck.code===404||o.linkCheck.code===410)) return 'Revisar fuente';
- if(o.id==='mckinsey-forward') return 'Próxima convocatoria';
+ if(o.availability==='próxima convocatoria') return 'Próxima convocatoria';
  if(o.availability==='permanente') return 'A tu ritmo';
  return 'Verificar convocatoria';
 }
