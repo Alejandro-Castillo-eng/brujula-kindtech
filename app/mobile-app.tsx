@@ -24,7 +24,13 @@ type OnboardingMode='auto'|'welcome'|'steps'|'closed';
 
 type Tab='home'|'explore'|'route'|'community'|'profile'|'saved'|'catalog'|'inbox';
 type Modal={type:'opportunity';item:Opportunity}|{type:'mentor';item:Mentor}|{type:'profile'}|{type:'add';item?:Opportunity}|{type:'join'}|{type:'feedback'}|{type:'privacy'}|null;
-const NAV=[{id:'home',label:'Inicio',icon:Home},{id:'explore',label:'Explorar',icon:Compass},{id:'route',label:'Mi ruta',icon:Route},{id:'community',label:'Comunidad',icon:Users},{id:'profile',label:'Mi perfil',icon:UserRound}] as const;
+// Ícono de Comunidad: dos personas abrazándose con un corazón (mismo estilo de línea que lucide).
+function HugIcon({size=24,strokeWidth=2}:{size?:number;strokeWidth?:number}){return <svg className="hug-icon" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+ <g className="hug-left"><circle cx="8.4" cy="8" r="2.6"/><path d="M3.5 21.5v-2.6a5.3 5.3 0 0 1 5.3-5.3"/><path d="M8.4 13.6c2.6.2 5 1.6 6.9 4"/></g>
+ <g className="hug-right"><circle cx="15.6" cy="8" r="2.6"/><path d="M20.5 21.5v-2.6a5.3 5.3 0 0 0-5.3-5.3"/><path d="M15.6 13.6c-2.6.2-5 1.6-6.9 4"/></g>
+ <path className="hug-heart" transform="translate(9.6 .4) scale(.2)" d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" fill="currentColor" stroke="none"/>
+</svg>}
+const NAV=[{id:'home',label:'Inicio',icon:Home},{id:'explore',label:'Explorar',icon:Compass},{id:'route',label:'Mi ruta',icon:Route},{id:'community',label:'Comunidad',icon:HugIcon},{id:'profile',label:'Mi perfil',icon:UserRound}] as const;
 // Un color por tipo de oportunidad, usado en toda la app (íconos, etiquetas y avatares).
 const TYPE_META:Record<string,{filter:string;plural:string;icon:typeof BookOpen;hue:string}>={curso:{filter:'Curso',plural:'Cursos',icon:GraduationCap,hue:'blue'},programa:{filter:'Programa',plural:'Programas',icon:Rocket,hue:'purple'},evento:{filter:'Evento',plural:'Eventos',icon:CalendarDays,hue:'pink'},voluntariado:{filter:'Voluntariado',plural:'Voluntariados',icon:HeartHandshake,hue:'green'}};
 // Color de cada área (para avatares y etiquetas de mentores).
