@@ -18,7 +18,10 @@ export function relevance(o:Opportunity,p:Profile|null) {
  const text=normalize([o.title,o.description,...o.skills,...o.categories].join(' '));
  const area=(areaWords[p.target]||[]).reduce((n,w)=>n+(text.includes(w)?2:0),0);
  // La carrera también cuenta: sube lo que se relaciona con ella.
- return area+keywordsForCareer(p.career||'').reduce((n,w)=>n+(text.includes(w)?1:0),0);
+ const career=keywordsForCareer(p.career||'').reduce((n,w)=>n+(text.includes(w)?1:0),0);
+ // Y lo que la persona marcó en «¿Qué ya sabes hacer?» (por su primera palabra: «Nube (AWS, Azure)» → nube).
+ const skills=(p.skills||[]).map(s=>normalize(s).split(/[^a-z0-9]+/)[0]).filter(w=>w&&w.length>2).reduce((n,w)=>n+(text.includes(w)?2:0),0);
+ return area+career+skills;
 }
 export function statusOf(o:Opportunity,now=new Date()) {
  if(o.deadline && /^\d{4}-\d{2}-\d{2}$/.test(o.deadline) && new Date(o.deadline+'T23:59:59-05:00').getTime()<now.getTime()) return 'Vencida';

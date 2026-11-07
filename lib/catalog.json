@@ -796,5 +796,70 @@
    "https://www.intercon.org.pe/"
   ],
   "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "google-skills-genai",
+  "title": "Introducción a la IA generativa",
+  "organization": "Google Skills",
+  "type": "curso",
+  "url": "https://www.skills.google/paths/118",
+  "description": "Ruta para principiantes de Google: de los fundamentos de los modelos de lenguaje a los principios de IA responsable, en 4 actividades.",
+  "skills": [
+   "Inteligencia artificial",
+   "IA generativa",
+   "IA responsable"
+  ],
+  "categories": [
+   "Tecnología",
+   "Inteligencia artificial",
+   "Nube",
+   "Empleabilidad"
+  ],
+  "costLabel": "Gratuito",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "durationLabel": "4 actividades · nivel principiante",
+  "language": "Inglés",
+  "evidence": "La página oficial de la ruta «Beginner: Introduction to Generative AI» indica 4 actividades sobre modelos de lenguaje e IA responsable. Google Skills ofrece gratis sus cursos a cualquier usuario de Google.",
+  "sourceUrls": [
+   "https://www.skills.google/paths/118",
+   "https://www.skills.google/paths"
+  ],
+  "lastVerified": "2026-11-07"
+ },
+ {
+  "id": "google-skills-paths",
+  "title": "Rutas de aprendizaje de Google Skills",
+  "organization": "Google Skills",
+  "type": "curso",
+  "url": "https://www.skills.google/paths",
+  "description": "Rutas de Google en IA, agentes, datos, nube, ciberseguridad y herramientas de desarrollo, con insignias y certificados que puedes compartir en LinkedIn.",
+  "skills": [
+   "Nube (Google Cloud)",
+   "Inteligencia artificial",
+   "Análisis de datos",
+   "Ciberseguridad"
+  ],
+  "categories": [
+   "Tecnología",
+   "Datos",
+   "Nube",
+   "Ciberseguridad",
+   "Inteligencia artificial"
+  ],
+  "costLabel": "Cursos gratis · laboratorios con créditos",
+  "format": "Virtual · a tu ritmo",
+  "location": "Desde Perú",
+  "deadline": null,
+  "availability": "permanente",
+  "language": "Inglés",
+  "statusNote": "Los cursos son gratuitos. Los laboratorios prácticos usan créditos: el plan gratuito incluye algunos al mes y el resto requiere suscripción.",
+  "evidence": "La página oficial de rutas las describe como colecciones de aprendizaje por área (AI/ML, Agents, Data, Dev Tools, Infrastructure, Productivity, Security) con insignias, certificados y certificaciones, y menciona 35 créditos mensuales sin costo mediante el programa GEAR para laboratorios.",
+  "sourceUrls": [
+   "https://www.skills.google/paths"
+  ],
+  "lastVerified": "2026-11-07"
  }
 ]
