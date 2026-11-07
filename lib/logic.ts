@@ -1,4 +1,5 @@
 import type { Opportunity, Profile, Task } from './types';
+import { keywordsForCareer } from './careers.ts';
 export const normalize = (value:string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 export const AREAS = ['Marketing y comunicación','Datos y analítica','Tecnología','Negocios y gestión','Diseño y creatividad','Impacto social'];
 export const SKILLS = ['Excel','Power BI','Python','Marketing digital','Comunicación','Trabajo en equipo','Inglés','Diseño','Programación','Gestión de proyectos','Liderazgo','Análisis de datos'];
@@ -15,7 +16,9 @@ const areaWords:Record<string,string[]> = {
 export function relevance(o:Opportunity,p:Profile|null) {
  if(!p) return 0;
  const text=normalize([o.title,o.description,...o.skills,...o.categories].join(' '));
- return (areaWords[p.target]||[]).reduce((n,w)=>n+(text.includes(w)?2:0),0);
+ const area=(areaWords[p.target]||[]).reduce((n,w)=>n+(text.includes(w)?2:0),0);
+ // La carrera también cuenta: sube lo que se relaciona con ella.
+ return area+keywordsForCareer(p.career||'').reduce((n,w)=>n+(text.includes(w)?1:0),0);
 }
 export function statusOf(o:Opportunity,now=new Date()) {
  if(o.deadline && /^\d{4}-\d{2}-\d{2}$/.test(o.deadline) && new Date(o.deadline+'T23:59:59-05:00').getTime()<now.getTime()) return 'Vencida';
