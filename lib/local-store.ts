@@ -12,7 +12,7 @@ export type KeyValueStorage = { getItem(key: string): string | null; setItem(key
 
 type CustomOpportunity = { id: string; data: Opportunity; status: string; createdAt: string };
 type SavedEntry = { opportunity_id: string; stage: string; created_at: string };
-type MentorData = { role: string; bio: string; topics: string[]; name: string; organization: string; area: string };
+type MentorData = { role: string; bio: string; topics: string[]; name: string; organization: string; area: string; career?: string; cycle?: number };
 type StoredRequest = Omit<MentorRequest, 'incoming'>;
 type State = {
  profile: Profile | null;
@@ -109,7 +109,7 @@ export function createStore(storage: KeyValueStorage, catalog: Opportunity[], de
     if (b.enabled === false) { state.mentor = null; break; }
     if (!state.profile) throw new StoreError('Completa primero tu perfil.');
     const details = mentorSchema.parse(b.mentor);
-    state.mentor = { ...details, name: state.profile.name, organization: state.profile.university || 'Comunidad Brújula', area: state.profile.target };
+    state.mentor = { ...details, name: state.profile.name, organization: state.profile.university || 'Comunidad Brújula', area: state.profile.target, career: state.profile.career, cycle: state.profile.cycle };
     break;
    }
    case 'mentor-request': {

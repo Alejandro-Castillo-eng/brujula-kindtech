@@ -52,6 +52,17 @@ export const CAREERS: Career[] = [
    keywords: ['diseno', 'visual', 'contenido', 'creatividad', 'redes sociales'] },
 ];
 
+// Sugerencias para el campo «¿En qué universidad estudias?» (se puede escribir cualquier otra).
+export const UNIVERSITIES = [
+ 'Pontificia Universidad Católica del Perú (PUCP)', 'Universidad Nacional de Ingeniería (UNI)', 'Universidad Nacional Mayor de San Marcos (UNMSM)',
+ 'Universidad Peruana de Ciencias Aplicadas (UPC)', 'Universidad de Ingeniería y Tecnología (UTEC)', 'Universidad de Lima', 'Universidad del Pacífico',
+ 'Universidad San Ignacio de Loyola (USIL)', 'Universidad ESAN', 'Universidad Peruana Cayetano Heredia (UPCH)', 'Universidad Nacional Agraria La Molina (UNALM)',
+ 'Universidad Nacional Federico Villarreal (UNFV)', 'Universidad Nacional del Callao (UNAC)', 'Universidad Ricardo Palma (URP)', 'Universidad de San Martín de Porres (USMP)',
+ 'Universidad Tecnológica del Perú (UTP)', 'Universidad Privada del Norte (UPN)', 'Universidad César Vallejo (UCV)', 'Universidad Científica del Sur',
+ 'Universidad de Piura (UDEP)', 'Universidad Católica San Pablo (UCSP)', 'Universidad Nacional de San Agustín (UNSA)', 'Universidad Nacional de Trujillo (UNT)',
+ 'Universidad Privada Antenor Orrego (UPAO)', 'Universidad Nacional de San Antonio Abad del Cusco (UNSAAC)',
+];
+
 // Para carreras que aún no cubrimos: áreas y habilidades que sirven en cualquier carrera.
 export const TRANSVERSAL_AREAS = [DATOS, MARKETING, NEGOCIOS, IMPACTO];
 export const TRANSVERSAL_SKILLS = ['Excel', IA_TRABAJO, 'PowerPoint', 'Inglés', 'Power BI', 'Análisis de datos', 'Google Workspace', 'Gestión de proyectos', 'Canva', 'Redacción de informes'];
