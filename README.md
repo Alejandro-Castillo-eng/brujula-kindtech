@@ -10,6 +10,7 @@ MVP web de KindTech con interfaz móvil. En un celular ocupa la pantalla; en esc
 
 - Bienvenida de menos de un minuto la primera vez: tres pasos de un toque (sobre ti, área de interés, habilidades y tiempo) y un resumen con fortalezas, habilidades por reforzar y ritmo, que lleva a Explorar oportunidades. Se puede saltar con «Ahora no» o «Solo quiero explorar».
 - Carreras iniciales: la carrera se elige de una lista corta (`lib/careers.ts`) y define las áreas que se ofrecen, los conocimientos técnicos de «¿Qué ya sabes hacer?» (por ejemplo, Git y GitHub o programar con IA en Ingeniería de Sistemas; Figma o Illustrator en Diseño Gráfico) y el orden de las oportunidades recomendadas. Si la carrera aún no está cubierta, se dice con claridad y se ofrecen áreas que sirven en cualquier carrera.
+- Referentes para guiarte (Mi perfil): 5 trayectorias típicas de la carrera y, si hay universidad, sus egresados; cada una abre una búsqueda de perfiles en LinkedIn. No se muestran datos de personas concretas.
 - Inicio, edición del perfil, objetivo y disponibilidad semanal.
 - Catálogo inicial de 28 oportunidades recopiladas de fuentes originales (cursos, programas en vivo, escuelas de verano, hackathons, prácticas, voluntariados y eventos IEEE), con modalidad, costo, requisitos, enlace y fecha de revisión.
 - Búsqueda por palabras, tipo, gratuidad y modalidad. Reconoce expresiones sencillas como «cursos gratis virtuales de marketing» mediante reglas, sin IA.
