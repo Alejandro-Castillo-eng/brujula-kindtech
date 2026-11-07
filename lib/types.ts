@@ -6,6 +6,7 @@ export type Opportunity = {
 };
 export type Profile = {name:string; career:string; university:string; cycle:number; target:string; skills:string[]; hours:number; bio:string};
 export type Mentor = {id:string;name:string;role:string;organization:string;area:string;bio:string;topics:string[];demo:boolean;own?:boolean;career?:string;cycle?:number;linkedin?:string};
-export type MentorRequest = {id:string;user_id:string;mentor_id:string;sender_name:string;message:string;status:string;is_demo:number;created_at:string;incoming:boolean};
+export type ChatMessage = {from:'me'|'them';text:string;at:string;example?:boolean};
+export type MentorRequest = {id:string;user_id:string;mentor_id:string;sender_name:string;message:string;status:string;is_demo:number;created_at:string;incoming:boolean;messages?:ChatMessage[]};
 export type Bootstrap = {user:{id:string;name:string;email:string};profile:Profile|null;opportunities:Opportunity[];saved:{opportunity_id:string;stage:string;created_at:string}[];progress:Record<string,boolean>;mentors:Mentor[];requests:MentorRequest[];feedbackCount:number};
 export type Task = {id:string;title:string;description:string;kind:string;opportunityId?:string;week:number};

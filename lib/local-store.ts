@@ -121,6 +121,22 @@ export function createStore(storage: KeyValueStorage, catalog: Opportunity[], de
     state.requests.push({ id: randomId(), user_id: LOCAL_USER_ID, mentor_id: mid, sender_name: state.profile.name, message, status: 'pendiente', is_demo: 1, created_at: stamp });
     break;
    }
+   case 'message': {
+    const rid = id.parse(b.id); const text = z.string().trim().min(1).max(1000).parse(b.text);
+    const row = state.requests.find(r => r.id === rid);
+    if (!row) throw new StoreError('Conversación no encontrada.');
+    if (row.status !== 'aceptada') throw new StoreError('Podrás escribir cuando la persona acepte tu solicitud.');
+    const msgs = row.messages || (row.messages = []);
+    msgs.push({ from: 'me', text, at: stamp });
+    if (row.is_demo) {
+     // Perfiles de ejemplo: respuesta automática, marcada como ejemplo.
+     const mentor = demoMentors.find(m => m.id === row.mentor_id);
+     const topic = (mentor?.topics[0] || 'tu objetivo').toLowerCase();
+     const replies = [`¡Hola! Gracias por escribir. Cuéntame qué te gustaría lograr con ${topic}.`, 'Buena idea. Empieza por algo corto y práctico; un pequeño proyecto te ayudará a avanzar.', 'En Explorar hay opciones gratuitas que te pueden servir. Guarda las que te interesen.', '¡Mucho éxito! Escríbeme cuando avances y lo revisamos juntos.'];
+     msgs.push({ from: 'them', text: replies[Math.min(msgs.filter(m => m.from === 'them').length, replies.length - 1)], at: stamp, example: true });
+    }
+    break;
+   }
    case 'request-status': {
     const rid = id.parse(b.id); const status = z.enum(['aceptada', 'rechazada', 'cancelada']).parse(b.status);
     const row = state.requests.find(r => r.id === rid);
